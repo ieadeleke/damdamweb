@@ -1,3 +1,5 @@
+'use client';
+
 import AppLayout from "@/components/layout/Layout";
 import Image from "next/image";
 
@@ -16,11 +18,16 @@ import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa6";
 
 import { FaAngleDown, FaAngleRight } from "react-icons/fa6";
+import { useState } from "react";
 
 
 export default function Home() {
+
+  const [currentValuesView, setCurrentValuesView] = useState<number>(0);
+  const [currentInfrastructureView, setCurrentInfrastructureView] = useState<number>(0);
+
   return (
-    <AppLayout>
+    <AppLayout blurry={true}>
       <section className="hero-bg flex items-center px-20 pt-24">
         <div>
           <h1 className="text-7xl text-white flex mb-5 gap-10 items-center">
@@ -96,36 +103,47 @@ export default function Home() {
           <div className="max-w-[490px]">
             <h4 className="text-white text-xl mb-8 font-camptonbold">Our Values</h4>
             <div className="mb-5">
-              <div className="flex items-center mb-3 justify-between">
+              <div onClick={() => setCurrentValuesView(0)} className="cursor-pointer flex items-center mb-3 justify-between">
                 <h4 className="text-white text-base font-camptonbold">Impact</h4>
-                <FaAngleDown className="text-white text-base" />
+                {currentValuesView === 0 ? <FaAngleDown className="text-white text-base" /> : <FaAngleRight className="text-white text-base" />}
               </div>
-              <p className="text-base font-camptonlight leading-loose md:leading-loose text-[#B2B2B2] max-w-[440px]">
-                Our mission is simple: to create powerful, user-focused digital solutions that drive growth, simplify processes, and unlock new opportunities for our clients.
-              </p>
+              <div className={`values-text ${currentValuesView === 0 ? 'show-text' : ''}`}>
+                <p className="text-base font-camptonlight leading-loose md:leading-loose text-[#B2B2B2] max-w-[440px]">
+                  Our mission is simple: to create powerful, user-focused digital solutions that drive growth, simplify processes, and unlock new opportunities for our clients.
+                </p>
+              </div>
             </div>
             <div className="mb-5">
-              <div className="flex items-center mb-3 justify-between">
+              <div onClick={() => setCurrentValuesView(1)} className="cursor-pointer flex items-center mb-3 justify-between">
                 <h4 className="text-white text-base font-camptonbold">Innovation</h4>
-                <FaAngleRight className="text-white text-base" />
+                {currentValuesView === 1 ? <FaAngleDown className="text-white text-base" /> : <FaAngleRight className="text-white text-base" />}
+              </div>
+              <div className={`values-text ${currentValuesView === 1 ? 'show-text' : ''}`}>
+                <p className="text-base font-camptonlight leading-loose md:leading-loose text-[#B2B2B2] max-w-[440px]">
+                  We challenge limits and reimagine what's possible. Our team thrives on forward-thinking ideas, continuously exploring new technologies to build smarter, faster, and more sustainable solutions for a changing world.
+                </p>
               </div>
             </div>
             <div className="mb-5">
-              <div className="flex items-center mb-3 justify-between">
-                <h4 className="text-white text-base font-camptonbold">Integrity</h4>
-                <FaAngleRight className="text-white text-base" />
-              </div>
-            </div>
-            <div className="mb-5">
-              <div className="flex items-center mb-3 justify-between">
+              <div onClick={() => setCurrentValuesView(2)} className="cursor-pointer flex items-center mb-3 justify-between">
                 <h4 className="text-white text-base font-camptonbold">Collaboration</h4>
-                <FaAngleRight className="text-white text-base" />
+                {currentValuesView === 2 ? <FaAngleDown className="text-white text-base" /> : <FaAngleRight className="text-white text-base" />}
+              </div>
+              <div className={`values-text ${currentValuesView === 2 ? 'show-text' : ''}`}>
+                <p className="text-base font-camptonlight leading-loose md:leading-loose text-[#B2B2B2] max-w-[440px]">
+                  Great things happen when people come together. We partner with clients, communities, and teammates to co-create solutions that work — built on trust, transparency, and shared vision.
+                </p>
               </div>
             </div>
             <div className="">
-              <div className="flex items-center mb-3 justify-between">
+              <div onClick={() => setCurrentValuesView(3)} className="cursor-pointer flex items-center mb-3 justify-between">
                 <h4 className="text-white text-base font-camptonbold">Excellence</h4>
-                <FaAngleRight className="text-white text-base" />
+                {currentValuesView === 3 ? <FaAngleDown className="text-white text-base" /> : <FaAngleRight className="text-white text-base" />}
+              </div>
+              <div className={`values-text ${currentValuesView === 3 ? 'show-text' : ''}`}>
+                <p className="text-base font-camptonlight leading-loose md:leading-loose text-[#B2B2B2] max-w-[440px]">
+                  We don&apos;t settle. From strategy to execution, we commit to the highest standards in every line of code, every interface, every outcome. Excellence is our baseline — and we keep raising it.
+                </p>
               </div>
             </div>
           </div>
@@ -145,69 +163,117 @@ export default function Home() {
         </div>
         <div className="border-2 border-solid border-[#8B8B8B] h-[581px] max-w-[1420px] flex justify-betwee mx-auto py-4 px-3 rounded-[20px]">
           {/* pr-32 */}
-          <div className="flex gap-5 h-full relative w-[800px]">
-            <div className="flex flex-col items-start relative w-max justify-between h-full">
-              <div>
-                <h4 className="text-base text-[#E5E5E5]">01</h4>
+          {/* ${currentInfrastructureView === 1 ? 'w-[800px]' : ''} */}
+          <div className={`flex h-full relative cursor-pointer infra px-4 ${currentInfrastructureView === 0 && 'w-[800px]'}`} onClick={() => setCurrentInfrastructureView(0)}>
+            <div className={`flex gap-5 h-full relative`}>
+              <div className="flex flex-col items-start relative w-max justify-between h-full">
+                <div>
+                  <h4 className="text-base text-[#E5E5E5]">01</h4>
+                </div>
               </div>
-            </div>
-            <div className="">
-              <div className="w-[450px] mb-5">
-                <h4 className="text-xl font-camptonsemibold mb-2 text-[#BCBCBC]">Software Development</h4>
-                <p className="text-sm font-camptonlight leading-relaxed md:leading-relaxed text-[#BCBCBC]">
-                  We design and develop custom web and mobile applications that are built around your goals. From internal tools to large-scale platforms, our team delivers secure, scalable, and user-friendly software.
-                </p>
+              <div className={`main-view ${currentInfrastructureView === 0 ? 'view' : ''}`}>
+                <div className="w-[450px] mb-5">
+                  <h4 className="text-xl font-camptonsemibold mb-2 text-[#BCBCBC]">Software Development</h4>
+                  <p className="text-sm font-camptonlight leading-relaxed md:leading-relaxed text-[#BCBCBC]">
+                    At Damdam Global, we build robust, scalable software solutions that power core operations for businesses, governments, and institutions. From enterprise applications to custom-built platforms, our software is engineered to solve real-world challenges, drive efficiency, and support long-term digital growth.
+                  </p>
+                </div>
+                <Image src={SoftwareImg} alt="mail" quality={100} width={800} height={800} className="h-auto w-full object-fit object-cover" />
               </div>
-              <Image src={SoftwareImg} alt="mail" quality={100} width={800} height={800} className="h-auto w-full object-fit object-cover" />
+              <h4 className="text-lg text-[#8B8B8B] w-full vertical-text whitespace-nowrap absolute bottom-0 -mb-5 -left-2">Software Development</h4>
             </div>
-            <h4 className="text-lg text-[#8B8B8B] w-full vertical-text absolute bottom-0 -mb-5 left-0">Software Development</h4>
           </div>
-          <div className="flex h-full relative border-x-2 px-6 border-solid border-[#8B8B8B]">
+          <div className={`flex h-full relative cursor-pointer infra border-x-2 px-6 border-solid border-[#8B8B8B] ${currentInfrastructureView === 1 && 'w-[800px]'}`} onClick={() => setCurrentInfrastructureView(1)}>
             <div className="flex gap-5 h-full relative">
               <div className="flex flex-col items-start relative w-max justify-between h-full">
                 <div>
                   <h4 className="text-base text-[#8B8B8B]">02</h4>
                 </div>
               </div>
+              <div className={`main-view ${currentInfrastructureView === 1 ? 'view' : ''}`}>
+                <div className="w-[450px] mb-5">
+                  <h4 className="text-xl font-camptonsemibold mb-2 text-[#BCBCBC]">UI & UX Design</h4>
+                  <p className="text-sm font-camptonlight leading-relaxed md:leading-relaxed text-[#BCBCBC]">
+                    We craft user experiences that are intuitive, accessible, and visually impactful. By blending strategy with design thinking, we ensure every interface not only looks good but works seamlessly. Our UI/UX approach focuses on user needs, ensuring engagement, ease of use, and real results.
+                  </p>
+                </div>
+                <Image src={SoftwareImg} alt="mail" quality={100} width={800} height={800} className="h-auto w-full object-fit object-cover" />
+              </div>
               <h4 className="text-lg text-[#8B8B8B] w-full vertical-text whitespace-nowrap absolute bottom-0 -mb-5 -left-2">UI & UX Design</h4>
             </div>
           </div>
-          <div className="flex h-full relative border-r-2 px-6 border-solid border-[#8B8B8B]">
+          <div className={`flex h-full relative cursor-pointer infra border-r-2 px-6 border-solid border-[#8B8B8B] ${currentInfrastructureView === 2 && 'w-[800px]'}`} onClick={() => setCurrentInfrastructureView(2)}>
             <div className="flex gap-5 h-full relative">
               <div className="flex flex-col items-start relative w-max justify-between h-full">
                 <div>
                   <h4 className="text-base text-[#8B8B8B]">03</h4>
                 </div>
               </div>
+              <div className={`main-view ${currentInfrastructureView === 2 ? 'view' : ''}`}>
+                <div className="w-[450px] mb-5">
+                  <h4 className="text-xl font-camptonsemibold mb-2 text-[#BCBCBC]">Data Analytics & AI</h4>
+                  <p className="text-sm font-camptonlight leading-relaxed md:leading-relaxed text-[#BCBCBC]">
+                    We harness the power of data to unlock insights, drive smarter decisions, and automate complex processes. Our AI-driven solutions help organizations anticipate trends, personalize services, and operate with precision. At Damdam, data isn't just collected — it's transformed into action.
+                  </p>
+                </div>
+                <Image src={SoftwareImg} alt="mail" quality={100} width={800} height={800} className="h-auto w-full object-fit object-cover" />
+              </div>
               <h4 className="text-lg text-[#8B8B8B] w-full vertical-text whitespace-nowrap absolute bottom-0 -mb-5 -left-2">Data Analytics & AI</h4>
             </div>
           </div>
-          <div className="flex h-full relative border-r-2 px-6 border-solid border-[#8B8B8B]">
+          <div className={`flex h-full relative cursor-pointer infra border-r-2 px-6 border-solid border-[#8B8B8B] ${currentInfrastructureView === 3 && 'w-[800px]'}`} onClick={() => setCurrentInfrastructureView(3)}>
             <div className="flex gap-5 h-full relative">
               <div className="flex flex-col items-start relative w-max justify-between h-full">
                 <div>
                   <h4 className="text-base text-[#8B8B8B]">04</h4>
                 </div>
               </div>
+              <div className={`main-view ${currentInfrastructureView === 3 ? 'view' : ''}`}>
+                <div className="w-[450px] mb-5">
+                  <h4 className="text-xl font-camptonsemibold mb-2 text-[#BCBCBC]">IT Consultancy & Digital Transformation</h4>
+                  <p className="text-sm font-camptonlight leading-relaxed md:leading-relaxed text-[#BCBCBC]">
+                    We guide organizations through every stage of digital evolution — from strategy to execution. Our consultancy services align technology with business goals, helping clients modernize legacy systems, adopt new tools, and build future-ready operations.
+                  </p>
+                </div>
+                <Image src={SoftwareImg} alt="mail" quality={100} width={800} height={800} className="h-auto w-full object-fit object-cover" />
+              </div>
               <h4 className="text-lg text-[#8B8B8B] w-full vertical-text whitespace-nowrap absolute bottom-0 -mb-5 -left-2">IT Consultancy & Digital Transformation</h4>
             </div>
           </div>
-          <div className="flex h-full relative border-r-2 px-6 border-solid border-[#8B8B8B]">
+          <div className={`flex h-full relative cursor-pointer infra border-r-2 px-6 border-solid border-[#8B8B8B] ${currentInfrastructureView === 4 && 'w-[800px]'}`} onClick={() => setCurrentInfrastructureView(4)}>
             <div className="flex gap-5 h-full relative">
               <div className="flex flex-col items-start relative w-max justify-between h-full">
                 <div>
                   <h4 className="text-base text-[#8B8B8B]">05</h4>
                 </div>
               </div>
+              <div className={`main-view ${currentInfrastructureView === 4 ? 'view' : ''}`}>
+                <div className="w-[450px] mb-5">
+                  <h4 className="text-xl font-camptonsemibold mb-2 text-[#BCBCBC]">Cloud Solutions & Infrastructure</h4>
+                  <p className="text-sm font-camptonlight leading-relaxed md:leading-relaxed text-[#BCBCBC]">
+                    Damdam Global delivers secure, scalable cloud solutions that support agility and growth. From cloud migration to infrastructure optimization, we help teams work smarter, collaborate seamlessly, and scale without limits — all while ensuring top-tier data security and performance.
+                  </p>
+                </div>
+                <Image src={SoftwareImg} alt="mail" quality={100} width={800} height={800} className="h-auto w-full object-fit object-cover" />
+              </div>
               <h4 className="text-lg text-[#8B8B8B] w-full vertical-text whitespace-nowrap absolute bottom-0 -mb-5 -left-2">Cloud Solutions & Infrastructure</h4>
             </div>
           </div>
-          <div className="flex h-full relative px-6">
+          <div className={`flex h-full relative cursor-pointer infra px-6 ${currentInfrastructureView === 5 && 'w-[800px]'}`} onClick={() => setCurrentInfrastructureView(5)}>
             <div className="flex gap-5 h-full relative">
               <div className="flex flex-col items-start relative w-max justify-between h-full">
                 <div>
                   <h4 className="text-base text-[#8B8B8B]">06</h4>
                 </div>
+              </div>
+              <div className={`main-view ${currentInfrastructureView === 5 ? 'view' : ''}`}>
+                <div className="w-[450px] mb-5">
+                  <h4 className="text-xl font-camptonsemibold mb-2 text-[#BCBCBC]">Payment Portals & Payroll Services</h4>
+                  <p className="text-sm font-camptonlight leading-relaxed md:leading-relaxed text-[#BCBCBC]">
+                    We design and deploy efficient, compliant, and user-friendly payment and payroll systems tailored to organizational needs. Whether it's streamlining government collections or automating company-wide disbursements, our platforms ensure transactions are fast, transparent, and secure.
+                  </p>
+                </div>
+                <Image src={SoftwareImg} alt="mail" quality={100} width={800} height={800} className="h-auto w-full object-fit object-cover" />
               </div>
               <h4 className="text-lg text-[#8B8B8B] w-full vertical-text whitespace-nowrap absolute bottom-0 -mb-5 -left-2">Payment Portals & Payroll Services</h4>
             </div>
@@ -223,49 +289,59 @@ export default function Home() {
         </p>
         <div className="grid grid-cols-2 gap-10">
           <div>
-            <Image src={Pay4It} alt="mail" quality={100} width={1000} height={1000} className="h-[400px] w-full object-fit object-cover mb-4" />
-            <div>
-              <h4 className="text-2xl mb-2 text-white">Pay4it</h4>
-              <p className="text- leading-loose md:leading-loose text-[#B2B2B2] text-base font-camptonlight max-w-[650px]">
-                A seamless bill payment and collection solution for government and corporate agencies, streamlining everything from taxes to utilities through web, mobile, and POS integrations.
-              </p>
-            </div>
+            <Link href="https://usepay4it.com" target="_blank" rel="noreferrer">
+              <Image src={Pay4It} alt="mail" quality={100} width={1000} height={1000} className="h-[400px] w-full object-fit object-cover mb-4" />
+              <div>
+                <h4 className="text-2xl mb-2 text-white">Pay4it</h4>
+                <p className="text- leading-loose md:leading-loose text-[#B2B2B2] text-base font-camptonlight max-w-[650px]">
+                  A seamless bill payment and collection solution for government and corporate agencies, streamlining everything from taxes to utilities through web, mobile, and POS integrations.
+                </p>
+              </div>
+            </Link>
           </div>
           <div>
-            <Image src={Paynest} alt="mail" quality={100} width={1000} height={1000} className="h-[400px] w-full object-fit object-cover mb-4" />
-            <div>
-              <h4 className="text-2xl mb-2 text-white">PayNest</h4>
-              <p className="text- leading-loose md:leading-loose text-[#B2B2B2] text-base font-camptonlight max-w-[650px]">
-                PayNest is our dedicated merchant dashboard, giving businesses full access to our powerful APIs for PAYE, Withholding Tax, and other remittance services.
-              </p>
-            </div>
+            <Link href="https://payment.usepay4it.com/#/auth/register" target="_blank" rel="noreferrer">
+              <Image src={Paynest} alt="mail" quality={100} width={1000} height={1000} className="h-[400px] w-full object-fit object-cover mb-4" />
+              <div>
+                <h4 className="text-2xl mb-2 text-white">PayNest</h4>
+                <p className="text- leading-loose md:leading-loose text-[#B2B2B2] text-base font-camptonlight max-w-[650px]">
+                  PayNest is our dedicated merchant dashboard, giving businesses full access to our powerful APIs for PAYE, Withholding Tax, and other remittance services.
+                </p>
+              </div>
+            </Link>
           </div>
           <div>
-            <Image src={Businex} alt="mail" quality={100} width={1000} height={1000} className="h-[400px] w-full object-fit object-cover mb-3" />
-            <div>
-              <h4 className="text-2xl mb-2 text-white">BusiNex</h4>
-              <p className="text- leading-loose md:leading-loose text-[#B2B2B2] text-base font-camptonlight max-w-[650px]">
-                Empowering businesses with payroll tools, employee records and compliance. Automate payroll, taxes, and employee compensation with ease.
-              </p>
-            </div>
+            <Link href="https://usepay4it.com" target="_blank" rel="noreferrer">
+              <Image src={Businex} alt="mail" quality={100} width={1000} height={1000} className="h-[400px] w-full object-fit object-cover mb-3" />
+              <div>
+                <h4 className="text-2xl mb-2 text-white">BusiNex</h4>
+                <p className="text- leading-loose md:leading-loose text-[#B2B2B2] text-base font-camptonlight max-w-[650px]">
+                  Empowering businesses with payroll tools, employee records and compliance. Automate payroll, taxes, and employee compensation with ease.
+                </p>
+              </div>
+            </Link>
           </div>
           <div>
-            <Image src={Laswa} alt="mail" quality={100} width={1000} height={1000} className="h-[400px] w-full object-fit object-cover mb-3" />
-            <div>
-              <h4 className="text-2xl mb-2 text-white">Laswa</h4>
-              <p className="text- leading-loose md:leading-loose text-[#B2B2B2] text-base font-camptonlight max-w-[620px]">
-                Custom digital infrastructure for the Lagos State Waterways Authority enhancing trip tracking, ticketing, and marine service oversight through smart technology.
-              </p>
-            </div>
+            <Link href="https://usepay4it.com" target="_blank" rel="noreferrer">
+              <Image src={Laswa} alt="mail" quality={100} width={1000} height={1000} className="h-[400px] w-full object-fit object-cover mb-3" />
+              <div>
+                <h4 className="text-2xl mb-2 text-white">Laswa</h4>
+                <p className="text- leading-loose md:leading-loose text-[#B2B2B2] text-base font-camptonlight max-w-[620px]">
+                  Custom digital infrastructure for the Lagos State Waterways Authority enhancing trip tracking, ticketing, and marine service oversight through smart technology.
+                </p>
+              </div>
+            </Link>
           </div>
           <div>
-            <Image src={Shikini} alt="mail" quality={100} width={1000} height={1000} className="h-[400px] w-full object-fit object-cover mb-3" />
-            <div>
-              <h4 className="text-2xl mb-2 text-white">Madam Shikini</h4>
-              <p className="text- leading-loose md:leading-loose text-[#B2B2B2] text-base font-camptonlight max-w-[620px]">
-                Madam Shikini is an AI-powered chatbot built to assist Lagos residents with instant access to government services, payment guidance, and everyday civic information.
-              </p>
-            </div>
+            <Link href="https://madamshikini.lagosstate.gov.ng/" target="_blank" rel="noreferrer">
+              <Image src={Shikini} alt="mail" quality={100} width={1000} height={1000} className="h-[400px] w-full object-fit object-cover mb-3" />
+              <div>
+                <h4 className="text-2xl mb-2 text-white">Madam Shikini</h4>
+                <p className="text- leading-loose md:leading-loose text-[#B2B2B2] text-base font-camptonlight max-w-[620px]">
+                  Madam Shikini is an AI-powered chatbot built to assist Lagos residents with instant access to government services, payment guidance, and everyday civic information.
+                </p>
+              </div>
+            </Link>
           </div>
         </div>
       </section>

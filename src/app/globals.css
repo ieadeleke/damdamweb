@@ -148,6 +148,13 @@ footer {
   background-position: left top, right top;
 }
 
+footer {
+  background: url('/footer.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .blurred-bg {
   backdrop-filter: blur(50px);
   -webkit-backdrop-filter: blur(50px);
@@ -157,4 +164,43 @@ footer {
 .vertical-text {
   transform: rotate(-90deg);
   transform-origin: 0 0;
+}
+
+.slider-bg {
+  background: url('/black.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.slider-bg:hover {
+  background: url('/blue.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.values-text {
+  max-height: 0px;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.values-text.show-text {
+  max-height: 40rem;
+  opacity: 1;
+}
+
+.infra .main-view {
+  max-width: 0px;
+  overflow: hidden;
+  opacity: 0;
+  /* transition: max-width .5s ease-in-out, opacity .5s ease-in-out; */
+}
+
+.infra .main-view.view {
+  max-width: 60rem;
+  opacity: 1;
 }

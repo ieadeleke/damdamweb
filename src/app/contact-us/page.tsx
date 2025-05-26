@@ -10,8 +10,8 @@ import AppLayout from "@/components/layout/Layout";
 
 const ContactUsPage = () => {
     return (
-        <AppLayout>
-            <div className="px-20 py-20">
+        <AppLayout hideMail={true}>
+            <div className="px-20 py-36">
                 <h1 className="text-5xl font-camptonbold text-white">Contact Us</h1>
                 <div className="mt-10">
                     <div className="flex items-center">

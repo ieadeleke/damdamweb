@@ -1,16 +1,18 @@
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 
-interface NavInterface {
+interface LayoutInterface {
+    blurry?: boolean
     children: React.ReactNode
+    hideMail?: boolean
 }
 
-const AppLayout = (props: NavInterface) => {
+const AppLayout = (props: LayoutInterface) => {
     return (
         <div>
-            <Navbar />
+            <Navbar blurry={props.blurry} />
             {props.children}
-            <Footer />
+            <Footer hideMail={props.hideMail} />
         </div>
     )
 }
