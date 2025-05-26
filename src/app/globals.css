@@ -132,7 +132,7 @@ footer {
 
   margin: 0;
   height: 100vh;
-  height: 900px;
+  height: 700px;
   /* background:
     linear-gradient(to right, black 50%, transparent 50%) left,
     url('/hero.png') right;
@@ -203,4 +203,10 @@ footer {
 .infra .main-view.view {
   max-width: 60rem;
   opacity: 1;
+}
+
+@media screen and (min-width: 900px) {
+  .hero-bg {
+    height: 900px;
+  }
 }
