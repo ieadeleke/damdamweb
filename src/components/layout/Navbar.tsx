@@ -5,7 +5,7 @@ import LogoImg from "@/assets/logo.svg";
 
 const Navbar = () => {
     return (
-        <nav className="flex items-center justify-between px-20 py-4 z-50 w-full gap-20 fixed top-0 w-full blurred-bg">
+        <nav className="flex items-center justify-between px-20 py-4 z-50 w-full max-w-[1920px] mx-auto gap-20 fixed top-0 blurred-bg">
             <div>
                 <Image src={LogoImg} alt="logo" quality={100} width={0} height={0} className="w-[148px] h-auto" />
             </div>
