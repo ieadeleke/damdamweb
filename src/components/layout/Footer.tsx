@@ -16,12 +16,12 @@ interface FooterInterface {
 
 const Footer = (props: FooterInterface) => {
     return (
-        <footer className="relative py-20 px-20">
-            <div className={`${props.hideMail ? 'hidden' : 'flex'} items-end mb-20 gap-16 justify-between`}>
-                <h2 className="text-6xl flex-1 max-w-[901px] leading-[1.3]">
+        <footer className="relative py-20 px-5 md:px-20">
+            <div className={`${props.hideMail ? 'hidden' : 'flex'} flex-col md:flex-row md:items-end mb-20 gap-16 justify-between`}>
+                <h2 className="text-5xl flex-1 max-w-[901px] leading-[1.3]">
                     Want to get more from DAMDAM GLOBAL?
                 </h2>
-                <div className="w-[620px]">
+                <div className="md:w-[620px]">
                     <div className="flex gap-0 items-center border-0 border-b-2 rounded-none border-solid border-white pb-3">
                         <Input className="py-6 bg-transparent border-0 rounded-none" placeholder="Your email" />
                         <div className="whitespace-nowrap">

@@ -205,8 +205,41 @@ footer {
   opacity: 1;
 }
 
+.offerings-bg {
+  background: url('/globe.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 @media screen and (min-width: 1600px) {
   .hero-bg {
-    height: 900px;
+    height: 800px;
   }
+}
+
+@media screen and (max-width: 750px) {
+
+  .infra .main-view {
+    max-height: 0px;
+    overflow: hidden;
+    opacity: 0;
+  }
+
+  .infra .main-view.view {
+    max-height: 3000rem;
+    opacity: 1;
+  }
+}
+
+.glow-top {
+  width: 70%;
+  height: 400px;
+  /* adjust as needed */
+  background: radial-gradient(ellipse at top center,
+      #0f3c5d 0%,
+      #08182c 40%,
+      #000 80%);
+  position: absolute;
+  top: -200px;
 }

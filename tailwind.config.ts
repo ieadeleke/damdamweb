@@ -63,7 +63,10 @@ export default {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		}
+  		},
+		gridTemplateColumns: {
+			'15/1': '1.2fr 1fr'
+		}
   	}
   },
   plugins: [require("tailwindcss-animate")],
