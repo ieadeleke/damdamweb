@@ -7,6 +7,7 @@ import Laswa from "@/assets/laswa.png";
 import Pay4It from "@/assets/pay4it.png";
 import Paynest from "@/assets/paynest.png";
 import Shikini from "@/assets/shikini.png";
+import LIRS from "@/assets/lirs.png";
 import Businex from "@/assets/businex.png";
 import Booktime from "@/assets/booktime.png";
 import VisionImg from "@/assets/vision.png";
@@ -28,8 +29,8 @@ export default function Home() {
 
   return (
     <AppLayout blurry={true}>
-      <section className="hero-bg flex items-center px-20 pt-24">
-        <div>
+      <section className="hero-bg flex items-center px-20 pt-24 max-w-[1900px] mx-auto">
+        <div className="max-w-[1700px] mx-auto">
           <h1 className="text-7xl text-white flex mb-5 gap-10 items-center">
             <p className="text-blue text-lg w-[230px]">
               Innovating the Future, One Line of Code at a Time.
@@ -50,16 +51,44 @@ export default function Home() {
         </div>
       </section>
       <div className="bg-blue w-full h-[90px]"></div>
-      <section className="px-5 md:px-20 py-28 bg-[#101010]">
+      <section className="px-5 md:px-10 pt-28 max-w-[1600px] mx-auto">
         <h4 className="text-blue text-lg md:text-xl mb-2 md:mb-4">What We Do</h4>
-        <p className="text- leading-loose md:leading-[1.6] text-[#B2B2B2] max-w-[1300px] text-xl md:text-3xl mb-5 md:mb-16">
+        <p className="text- leading-loose md:leading-[1.6] text-[#B2B2B2] max-w-[1300px] text-xl md:text-3xl mb-5 md:mb-20">
           DamDam Global develops digital solutions that solve complex business and governance problems. Whether it is creating custom software, automating processes, or consulting on digital transformation, we help institutions evolve with confidence and clarity.
         </p>
-        <div className="flex flex-col md:grid grid-cols-15/1 md:flex-row items-center gap-3">
-          <div className="flex-1 offerings-bg h-full w-full">
-            {/* <Image src={GlobeImg} alt="mail" quality={100} width={1000} height={1000} className="max-w-[1178px] ml-auto h-full w-full object-fit object-cover mb-5 md:mb-0" /> */}
+        <div className="flex flex-col md:flex-row gap-10 items-center justify-between mb-14">
+          <h4 className="text-3xl md:text-[46px]">Our Core Offerings</h4>
+          <Link href="/contact-us" className="w-max flex items-center gap-5 border-2 md:border border-solid bg-white border-white rounded-full py-4 px-8 md:px-12 text-black">Contact Us <FaArrowRight className="text-[#B2B2B2] text-2xl text-black" /></Link>
+        </div>
+        <div className="flex flex-col md:grid grid-cols-4 gap-6">
+          <div className="border-r border-solid border-[#373737] py-10 pr-6">
+            <h4 className="text-white mb-3 text-lg md:text-xl 4xl:text-2xl font-camptonsemi">Technology Consulting:</h4>
+            <p className="text- leading-loose md:leading-relaxed text-[#B2B2B2] max-w-[400px] text-sm md:text-base 4xl:text-lg font-camptonlight">
+              We work with organisations to understand their digital needs, develop a clear strategy, and implement solutions that work. Whether you are launching a new initiative or improving an existing system, we bring clarity to complexity.
+            </p>
           </div>
-          {/* <div className="md:w-[680px]"> */}
+          <div className="border-r border-solid border-[#373737] py-10 pr-6">
+            <h4 className="text-white mb-3 text-lg md:text-xl 4xl:text-2xl font-camptonsemi">Software Development:</h4>
+            <p className="text- leading-loose md:leading-relaxed text-[#B2B2B2] max-w-[400px] text-sm md:text-base 4xl:text-lg font-camptonlight">
+              We design, develop, and deploy user-focused web and mobile applications. From MVPs to enterprise-grade platforms, our development process is agile, secure, and built for scale.
+            </p>
+          </div>
+          <div className="border-r border-solid border-[#373737] py-10 pr-6">
+            <h4 className="text-white mb-3 text-lg md:text-xl 4xl:text-2xl font-camptonsemi">Process Automation:</h4>
+            <p className="text- leading-loose md:leading-relaxed text-[#B2B2B2] max-w-[400px] text-sm md:text-base 4xl:text-lg font-camptonlight">
+              We build intelligent systems that eliminate manual inefficiencies. From revenue tracking to service delivery automation, we help organisations save time and improve accountability.
+            </p>
+          </div>
+          <div className="py-10">
+            <h4 className="text-white mb-3 text-lg md:text-xl 4xl:text-2xl font-camptonsemi">Fintech Solutions:</h4>
+            <p className="text- leading-loose md:leading-relaxed text-[#B2B2B2] max-w-[400px] text-sm md:text-base 4xl:text-lg font-camptonlight">
+              We develop financial technology platforms that enable digital payments, improve tax collection, and streamline revenue generation for government and business entities alike.
+            </p>
+          </div>
+        </div>
+        {/* <div className="flex flex-col md:grid grid-cols-15/1 md:flex-row items-center gap-3">
+          <div className="flex-1 offerings-bg h-full w-full">
+          </div>
           <div className="max-w-[760px] py-12">
             <h4 className="text-3xl md:text-[46px] md:-ml-16 mb-4">Our Core Offerings</h4>
             <ul className="flex flex-col gap-5 mb-7 pl-3">
@@ -83,9 +112,9 @@ export default function Home() {
             </ul>
             <Link href="/contact-us" className="w-max flex items-center gap-5 border-2 md:border border-solid bg-white border-white rounded-full py-4 px-8 md:px-12 text-black">Contact Us <FaArrowRight className="text-[#B2B2B2] text-2xl text-black" /></Link>
           </div>
-        </div>
+        </div> */}
       </section>
-      <section className="px-5 md:px-40 py-28">
+      <section className="px-5 md:px-40 pt-10 pb-28 max-w-[1600px] mx-auto">
         <div className="flex flex-col-reverse md:grid grid-cols-2 md:items-center gap-5 md:gap-36">
           <div>
             <h4 className="text-white text-xl mb-1 md:mb-4 font-camptonbold">Our Vision</h4>
@@ -172,9 +201,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="px-5 md:px-20 py-28">
+      <section className="px-5 md:px-20 py-28 max-w-[1600px] mx-auto">
         <h4 className="text-blue mb-4 md:mb-5 text-base md:text-3xl">
-          Our Products
+          Portfolio
         </h4>
         <p className="text- leading-loose md:leading-normal max-w-[1200px] mb-10 md:mb-16 text-[#B2B2B2] text-lg md:text-4xl">
           Our product ecosystem is designed to accelerate growth, enhance public service delivery, and simplify how businesses and citizens engage with technology.
@@ -182,10 +211,10 @@ export default function Home() {
         <div className="flex flex-col md:grid grid-cols-2 gap-10 md:gap-10">
           <div>
             <Link href="https://usepay4it.com" target="_blank" rel="noreferrer">
-              <Image src={Pay4It} alt="mail" quality={100} width={1000} height={1000} className="h-[200px] md:h-[400px] w-full object-fit object-cover mb-4" />
+              <Image src={Pay4It} alt="mail" quality={100} width={1000} height={1000} className="h-[200px] md:h-[400px] w-full object-fit object-cover mb-6" />
               <div>
-                <h4 className="text-xl md:text-2xl mb-2 text-white">Pay4it</h4>
-                <p className="text- leading-loose md:leading-loose text-[#B2B2B2] text-sm md:text-base font-camptonlight max-w-[650px]">
+                <h4 className="text-xl md:text-2xl mb-4 text-white">Pay4it</h4>
+                <p className="text- leading-loose md:leading-loose text-[#B2B2B2] text-sm md:text-base font-camptonlight md:max-w-[650px]">
                   Pay4IT empowers businesses, individuals, and governments with innovative financial technology solutions. Whether you are a merchant, a service provider, or an entrepreneur, we have a suite of business solutions specially curated for you. Pay4IT enables digital payments, drives transparency, efficiency, and economic growth across diverse sectors.
                 </p>
               </div>
@@ -193,10 +222,10 @@ export default function Home() {
           </div>
           <div>
             <Link href="https://payment.usepay4it.com/#/auth/register" target="_blank" rel="noreferrer">
-              <Image src={Paynest} alt="mail" quality={100} width={1000} height={1000} className="h-[200px] md:h-[400px] w-full object-fit object-cover mb-4" />
+              <Image src={Paynest} alt="mail" quality={100} width={1000} height={1000} className="h-[200px] md:h-[400px] w-full object-fit object-cover mb-6" />
               <div>
-                <h4 className="text-xl md:text-2xl mb-2 text-white">PayNest</h4>
-                <p className="text- leading-loose md:leading-loose text-[#B2B2B2] text-sm md:text-base font-camptonlight max-w-[650px]">
+                <h4 className="text-xl md:text-2xl mb-4 text-white">PayNest</h4>
+                <p className="text- leading-loose md:leading-loose text-[#B2B2B2] text-sm md:text-base font-camptonlight md:max-w-[650px]">
                   It simplifies three key areas of financial compliance; the PAYE API, Withholding API, and the Lagos State Government Bill Payment API. This solution facilitates efficient tax calculations and payments directly to Lagos State Internal Revenue Service (LIRS).
                 </p>
               </div>
@@ -204,13 +233,13 @@ export default function Home() {
           </div>
           <div>
             <Link href="https://usepay4it.com" target="_blank" rel="noreferrer">
-              <Image src={Businex} alt="mail" quality={100} width={1000} height={1000} className="h-[200px] md:h-[400px] w-full object-fit object-cover mb-3" />
+              <Image src={Businex} alt="mail" quality={100} width={1000} height={1000} className="h-[200px] md:h-[400px] w-full object-fit object-cover mb-5" />
               <div>
-                <h4 className="text-xl md:text-2xl mb-2 text-white">BusiNex</h4>
-                <p className="text- leading-loose md:leading-loose text-[#B2B2B2] text-sm md:text-base font-camptonlight max-w-[650px]">
+                <h4 className="text-xl md:text-2xl mb-4 text-white">BusiNex</h4>
+                <p className="text- leading-loose md:leading-loose text-[#B2B2B2] text-sm md:text-base font-camptonlight md:max-w-[640px]">
                   Automates payroll, tax deductions and compliance.
                 </p>
-                <p className="text- leading-loose md:leading-loose text-[#B2B2B2] text-sm md:text-base font-camptonlight max-w-[650px]">
+                <p className="text- leading-loose md:leading-loose text-[#B2B2B2] text-sm md:text-base font-camptonlight md:max-w-[640px]">
                   Businex is a payroll and compliance solution. It automates salary processing, ensures compliance, and integrates tax remittance directly with the Lagos State Inland Revenue Service (LIRS). Businesses no longer need to spend hours calculating deductions, generating payroll reports, and remitting payments manually. Businex optimise these processes by ensuring efficiency, accuracy, and compliance
                 </p>
               </div>
@@ -218,23 +247,26 @@ export default function Home() {
           </div>
           <div>
             <Link href="https://usepay4it.com" target="_blank" rel="noreferrer">
-              <Image src={Booktime} alt="mail" quality={100} width={1000} height={1000} className="h-[200px] md:h-[400px] w-full object-fit object-cover mb-3" />
+              <Image src={Booktime} alt="mail" quality={100} width={1000} height={1000} className="h-[200px] md:h-[400px] w-full object-fit object-cover mb-5" />
               <div>
-                <h4 className="text-xl md:text-2xl mb-2 text-white">BOOKTIME</h4>
-                <p className="text- leading-loose md:leading-loose text-[#B2B2B2] text-sm md:text-base font-camptonlight max-w-[650px]">
+                <h4 className="text-xl md:text-2xl mb-4 text-white">BOOKTIME</h4>
+                <p className="text- leading-loose md:leading-loose text-[#B2B2B2] text-sm md:text-base font-camptonlight md:max-w-[640px]">
                   BookTime is a cutting-edge digital visitor management system.
                 </p>
-                <p className="text- leading-loose md:leading-loose text-[#B2B2B2] text-sm md:text-base font-camptonlight max-w-[650px]">
-                  It transforms the traditional approach to visitor logs by providing businesses with a streamlined and highly customisable solution to elevate their visitor experiences. From visitor check-ins to real-time analytics, BookTime transforms the way organizations manage their guests, ensuring a modern, efficient, and secure visitor experience.
+                <p className="text- leading-loose md:leading-loose text-[#B2B2B2] text-sm md:text-base font-camptonlight md:max-w-[650px]">
+                  It transforms the traditional approach to visitor logs by providing businesses with a streamlined and highly customisable solution to elevate their visitor experiences.
+                </p>
+                <p className="text- leading-loose md:leading-loose text-[#B2B2B2] text-sm md:text-base font-camptonlight md:max-w-[650px]">
+                  From visitor check-ins to real-time analytics, BookTime transforms the way organizations manage their guests, ensuring a modern, efficient, and secure visitor experience.
                 </p>
               </div>
             </Link>
           </div>
           <div>
             <Link href="https://usepay4it.com" target="_blank" rel="noreferrer">
-              <Image src={Laswa} alt="mail" quality={100} width={1000} height={1000} className="h-[200px] md:h-[400px] w-full object-fit object-cover mb-3" />
+              <Image src={Laswa} alt="mail" quality={100} width={1000} height={1000} className="h-[200px] md:h-[400px] w-full object-fit object-cover mb-5" />
               <div>
-                <h4 className="text-xl md:text-2xl mb-2 text-white">Laswa</h4>
+                <h4 className="text-xl md:text-2xl mb-4 text-white">Laswa</h4>
                 <p className="text- leading-loose md:leading-loose text-[#B2B2B2] text-sm md:text-base font-camptonlight max-w-[620px]">
                   Custom digital infrastructure for the Lagos State Waterways Authority enhancing trip tracking, ticketing, and marine service oversight through smart technology.
                 </p>
@@ -243,9 +275,9 @@ export default function Home() {
           </div>
           <div>
             <Link href="https://madamshikini.lagosstate.gov.ng/" target="_blank" rel="noreferrer">
-              <Image src={Shikini} alt="mail" quality={100} width={1000} height={1000} className="h-[200px] md:h-[400px] w-full object-fit object-cover mb-3" />
+              <Image src={Shikini} alt="mail" quality={100} width={1000} height={1000} className="h-[200px] md:h-[400px] w-full object-fit object-cover mb-5" />
               <div>
-                <h4 className="text-xl md:text-2xl mb-2 text-white">Madam Shikini</h4>
+                <h4 className="text-xl md:text-2xl mb-4 text-white">Madam Shikini</h4>
                 <p className="text- leading-loose md:leading-loose text-[#B2B2B2] text-sm md:text-base font-camptonlight max-w-[620px]">
                   Madam Shikini is an AI-powered chatbot built to assist Lagos residents with instant access to government services, payment guidance, and everyday civic information.
                 </p>
@@ -254,11 +286,14 @@ export default function Home() {
           </div>
           <div>
             <Link href="https://madamshikini.lagosstate.gov.ng/" target="_blank" rel="noreferrer">
-              <Image src={Shikini} alt="mail" quality={100} width={1000} height={1000} className="h-[200px] md:h-[400px] w-full object-fit object-cover mb-3" />
+              <Image src={LIRS} alt="mail" quality={100} width={1000} height={1000} className="h-[200px] md:h-[400px] w-full object-fit object-cover mb-6" />
               <div>
-                <h4 className="text-xl md:text-2xl mb-2 text-white">Madam Shikini</h4>
+                <h4 className="text-xl md:text-2xl mb-4 text-white">LIRS</h4>
                 <p className="text- leading-loose md:leading-loose text-[#B2B2B2] text-sm md:text-base font-camptonlight max-w-[620px]">
-                  Madam Shikini is an AI-powered chatbot built to assist Lagos residents with instant access to government services, payment guidance, and everyday civic information.
+                  DamDam Global combines field operations, technology enablement, and lean management to ensure high-yield performance. With a focused team of field agents and dedicated operational support, the strategy maximises reach, reduces inefficiencies, and guarantees transparent collections.
+                </p>
+                <p className="text- leading-loose md:leading-loose text-[#B2B2B2] text-sm md:text-base font-camptonlight max-w-[630px]">
+                  The markets in this zone serve over 360,000 traders, making them high-potential zones for informal sector tax remittance and a viable ecosystem for digital enumeration and collections. Given the scale of commercial activity, the informal sector within these markets offers a huge opportunity to generate revenue through physical and technology-enabled tax collection.
                 </p>
               </div>
             </Link>

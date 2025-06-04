@@ -65,16 +65,16 @@ export default function TestimonialCarousel() {
   const current = testimonials[currentIndex];
 
   return (
-    <div className="text-white min-h-screen flex flex-col justify-center items-center px-8 py-24 relative overflow-hidden">
+    <div className="text-white min-h-scree flex flex-col justify-center items-center px-8 py-24 relative overflow-hidden">
       <div className="glow-top"></div>
       <div className="z-40">
         <div className="text-center mb-8 max-w-2xl">
-          <h1 className="text-4xl md:text-5xl leading-[2.6] font-bold mb-6">
+          <h1 className="text-4xl md:text-5xl leading-[1.9] md:leading-[1.3] font-bold mb-6">
             What Our <span className="text-blue">Partners</span> Are Saying
           </h1>
-          <p className="text-[#BECCFF] max-w-[470px] mx-auto text-lg">
+          {/* <p className="text-[#BECCFF] max-w-[470px] mx-auto text-lg">
             Meet the teachers, students, and schools whose lives have been transformed by your support.
-          </p>
+          </p> */}
         </div>
 
         <div className="flex items-center justify-center mb-8 space-x-4">
@@ -95,15 +95,15 @@ export default function TestimonialCarousel() {
           ))}
         </div>
         <div className="text-center relative">
-          <div className="mb-8">
+          <div className="mb-3">
             <h3 className="text-xl font-semibold mb-1">{current.name}</h3>
             <p className="text-[#AAAAAA] text-base italic mb-2">{current.location}</p>
-            <p className="text-[#AAAAAA] text-base italic mb-5">{current.title}</p>
-            <div className="h-[3px] w-[120px] block mx-auto bg-white"></div>
+            <p className="text-[#AAAAAA] text-base italic mb-2">{current.title}</p>
+            <div className="h-[2px] w-[60px] block mx-auto bg-white"></div>
           </div>
-          <div className="mb-8">
-            <div className="text-4xl text-blue-400 mb-4">"</div>
-            <Image src={QuoteImg} alt="quote" quality={100} width={700} height={700} className="max-w-[30px] h-full w-full" />
+          <div className="mb-5">
+            {/* <div className="text-4xl text-blue-400 mb-4">"</div> */}
+            <Image src={QuoteImg} alt="quote" quality={100} width={1200} height={1200} className="max-w-[30px] h-full w-full mx-auto mb-5" />
             <p className="text-lg text-[#AAAAAA] leading-relaxed md:max-w-[550px] mx-auto">
               {current.quote}
             </p>

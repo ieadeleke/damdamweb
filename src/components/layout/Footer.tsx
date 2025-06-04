@@ -16,7 +16,7 @@ interface FooterInterface {
 
 const Footer = (props: FooterInterface) => {
     return (
-        <footer className="relative py-20 px-5 md:px-20">
+        <footer className="relative py-20 px-5 md:px-20 max-w-[1600px] mx-auto">
             <div className={`${props.hideMail ? 'hidden' : 'flex'} flex-col md:flex-row md:items-end mb-20 gap-16 justify-between`}>
                 <h2 className="text-5xl flex-1 max-w-[901px] leading-[1.3]">
                     Want to get more from DAMDAM GLOBAL?
