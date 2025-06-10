@@ -29,21 +29,31 @@ export default function Home() {
 
   return (
     <AppLayout blurry={true}>
-      <section className="hero-bg flex items-center px-20 pt-24 max-w-[1900px] mx-auto">
-        <div className="max-w-[1700px] mx-auto">
-          <h1 className="text-7xl text-white flex mb-5 gap-10 items-center">
-            <p className="text-blue text-lg w-[230px]">
+      <section className="hero-bg flex items-center px-3 md:px-20 pt-24 md:max-w-[1900px] mx-auto">
+        <div className="md:max-w-[1700px] mx-auto">
+          <div className="hidden md:block">
+            <h1 className="text-4xl md:text-7xl text-white md:flex mb-1 md:mb-5 gap-10 items-center">
+              <p className="text-blue text-sm w-[50%] mb-3 md:mb-0 md:w-full md:text-lg md:w-[230px]">
+                Innovating the Future, One Line of Code at a Time.
+              </p>Stay ahead of the curve with
+            </h1>
+            <h1 className="text-4xl md:text-7xl text-white mb-3 md:mb-10">
+              Future ready digital solutions
+            </h1>
+          </div>
+          <div className="block md:hidden">
+            <p className="text-blue text-sm leading-loose md:leading-normal w-[50%] mb-3 md:mb-0 md:w-full md:text-lg md:w-[230px]">
               Innovating the Future, One Line of Code at a Time.
-            </p>Stay ahead of the curve with
-          </h1>
-          <h1 className="text-7xl text-white mb-10">
-            Future ready digital solutions
-          </h1>
-          <p className="text-white text-lg leading-relaxed md:leading-relaxed w-[650px] mb-10 font-camptonlight">
+            </p>
+            <h1 className="text-4xl md:text-7xl leading-[1.3] text-white mb-3 md:mb-10">
+              Stay ahead of the curve with Future ready digital solutions
+            </h1>
+          </div>
+          <p className="text-white text-sm md:text-lg leading-loose md:leading-relaxed md:w-[650px] mb-10 font-camptonlight">
             DamDam Global is a forward-thinking technology consulting and software development company committed to driving business and government transformation through digital innovation. We specialise in designing and implementing smart, efficient, and scalable solutions that simplify service delivery, improve revenue generation, and promote accountability.
           </p>
           <div className="flex gap-0 items-center">
-            <p className="text-[#C5C5C5] font-camptonlight w-[240px]">
+            <p className="text-sm md:text-base text-[#C5C5C5] font-camptonlight md:w-[240px]">
               Trusted by leading organizations across sectors.
             </p>
             <Image src={Companies} alt="companies" quality={100} width={700} height={700} className="max-w-[260px] h-full w-full" />
@@ -51,36 +61,36 @@ export default function Home() {
         </div>
       </section>
       <div className="bg-blue w-full h-[90px]"></div>
-      <section className="px-5 md:px-10 pt-28 max-w-[1600px] mx-auto">
-        <h4 className="text-blue text-lg md:text-xl mb-2 md:mb-4">What We Do</h4>
-        <p className="text- leading-loose md:leading-[1.6] text-[#B2B2B2] max-w-[1300px] text-xl md:text-3xl mb-5 md:mb-20">
+      <section className="px-5 md:px-10 pt-20 md:pt-28 max-w-[1600px] mx-auto">
+        <h4 className="text-blue text-base md:text-xl mb-2 md:mb-4">What We Do</h4>
+        <p className="text- leading-loose md:leading-[1.6] text-[#B2B2B2] max-w-[1300px] text-base md:text-3xl mb-20 md:mb-20">
           DamDam Global develops digital solutions that solve complex business and governance problems. Whether it is creating custom software, automating processes, or consulting on digital transformation, we help institutions evolve with confidence and clarity.
         </p>
-        <div className="flex flex-col md:flex-row gap-10 items-center justify-between mb-14">
-          <h4 className="text-3xl md:text-[46px]">Our Core Offerings</h4>
-          <Link href="/contact-us" className="w-max flex items-center gap-5 border-2 md:border border-solid bg-white border-white rounded-full py-4 px-8 md:px-12 text-black">Contact Us <FaArrowRight className="text-[#B2B2B2] text-2xl text-black" /></Link>
+        <div className="flex flex-col md:flex-row gap-10 md:items-center justify-between mb-5 md:mb-14">
+          <h4 className="text-2xl md:text-3xl md:text-[46px]">Our Core Offerings:</h4>
+          <Link href="/contact-us" className="w-max hidden md:flex items-center gap-5 border-2 md:border border-solid bg-white border-white rounded-full py-4 px-8 md:px-12 text-black">Contact Us <FaArrowRight className="text-[#B2B2B2] text-2xl text-black" /></Link>
         </div>
-        <div className="flex flex-col md:grid grid-cols-4 gap-6">
-          <div className="border-r border-solid border-[#373737] py-10 pr-6">
-            <h4 className="text-white mb-3 text-lg md:text-xl 4xl:text-2xl font-camptonsemi">Technology Consulting:</h4>
+        <div className="flex flex-col md:grid grid-cols-4 gap-2 md:gap-6">
+          <div className="md:border-r border-solid border-[#373737] py-5 md:py-10 md:pr-6">
+            <h4 className="text-white mb-1 md:mb-3 text-lg md:text-xl 4xl:text-2xl font-camptonsemi">Technology Consulting:</h4>
             <p className="text- leading-loose md:leading-relaxed text-[#B2B2B2] max-w-[400px] text-sm md:text-base 4xl:text-lg font-camptonlight">
               We work with organisations to understand their digital needs, develop a clear strategy, and implement solutions that work. Whether you are launching a new initiative or improving an existing system, we bring clarity to complexity.
             </p>
           </div>
-          <div className="border-r border-solid border-[#373737] py-10 pr-6">
-            <h4 className="text-white mb-3 text-lg md:text-xl 4xl:text-2xl font-camptonsemi">Software Development:</h4>
+          <div className="md:border-r border-solid border-[#373737] py-5 md:py-10 md:pr-6">
+            <h4 className="text-white mb-1 md:mb-3 text-lg md:text-xl 4xl:text-2xl font-camptonsemi">Software Development:</h4>
             <p className="text- leading-loose md:leading-relaxed text-[#B2B2B2] max-w-[400px] text-sm md:text-base 4xl:text-lg font-camptonlight">
               We design, develop, and deploy user-focused web and mobile applications. From MVPs to enterprise-grade platforms, our development process is agile, secure, and built for scale.
             </p>
           </div>
-          <div className="border-r border-solid border-[#373737] py-10 pr-6">
-            <h4 className="text-white mb-3 text-lg md:text-xl 4xl:text-2xl font-camptonsemi">Process Automation:</h4>
+          <div className="md:border-r border-solid border-[#373737] py-5 md:py-10 md:pr-6">
+            <h4 className="text-white mb-1 md:mb-3 text-lg md:text-xl 4xl:text-2xl font-camptonsemi">Process Automation:</h4>
             <p className="text- leading-loose md:leading-relaxed text-[#B2B2B2] max-w-[400px] text-sm md:text-base 4xl:text-lg font-camptonlight">
               We build intelligent systems that eliminate manual inefficiencies. From revenue tracking to service delivery automation, we help organisations save time and improve accountability.
             </p>
           </div>
-          <div className="py-10">
-            <h4 className="text-white mb-3 text-lg md:text-xl 4xl:text-2xl font-camptonsemi">Fintech Solutions:</h4>
+          <div className="py-5 md:py-10">
+            <h4 className="text-white mb-1 md:mb-3 text-lg md:text-xl 4xl:text-2xl font-camptonsemi">Fintech Solutions:</h4>
             <p className="text- leading-loose md:leading-relaxed text-[#B2B2B2] max-w-[400px] text-sm md:text-base 4xl:text-lg font-camptonlight">
               We develop financial technology platforms that enable digital payments, improve tax collection, and streamline revenue generation for government and business entities alike.
             </p>
@@ -114,7 +124,7 @@ export default function Home() {
           </div>
         </div> */}
       </section>
-      <section className="px-5 md:px-40 pt-10 pb-28 max-w-[1600px] mx-auto">
+      <section className="px-5 md:px-40 pt-10 md:pb-28 max-w-[1600px] mx-auto">
         <div className="flex flex-col-reverse md:grid grid-cols-2 md:items-center gap-5 md:gap-36">
           <div>
             <h4 className="text-white text-xl mb-1 md:mb-4 font-camptonbold">Our Vision</h4>
@@ -132,7 +142,7 @@ export default function Home() {
           </div>
           <div>
             <h4 className="text-white text-xl mb-1 md:mb-4 font-camptonbold">Our Mission</h4>
-            <p className="md:text-base font-camptonlight leading-loose md:leading-loose text-[#B2B2B2] max-w-[490px]">
+            <p className="text-sm md:text-base font-camptonlight leading-loose md:leading-loose text-[#B2B2B2] max-w-[490px]">
               Our mission is simple: to create powerful, user-focused digital solutions that drive growth, simplify processes, and unlock new opportunities for our clients.
             </p>
           </div>
@@ -201,11 +211,11 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="px-5 md:px-20 py-28 max-w-[1600px] mx-auto">
+      <section className="px-5 md:px-20 pt-20 pb-20 md:pt-28 md:pb-28 max-w-[1600px] mx-auto">
         <h4 className="text-blue mb-4 md:mb-5 text-base md:text-3xl">
           Portfolio
         </h4>
-        <p className="text- leading-loose md:leading-normal max-w-[1200px] mb-10 md:mb-16 text-[#B2B2B2] text-lg md:text-4xl">
+        <p className="text- leading-loose md:leading-normalmd: max-w-[1200px] mb-10 md:mb-16 text-[#B2B2B2] text-base md:text-4xl">
           Our product ecosystem is designed to accelerate growth, enhance public service delivery, and simplify how businesses and citizens engage with technology.
         </p>
         <div className="flex flex-col md:grid grid-cols-2 gap-10 md:gap-10">

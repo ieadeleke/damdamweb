@@ -26,7 +26,7 @@ const ContactUsPage = () => {
                                         </div>
                                         <div>
                                             <p className="text-graytext text-base mb-1">Quick Contact</p>
-                                            <h4 className="text-white">Email: <Link href="/" className="text-blue underline">
+                                            <h4 className="text-white">Email: <Link href="mailTo:info@damdamglobal.com" className="text-blue underline">
                                                 info@damdamglobal.com</Link></h4>
                                         </div>
                                     </div>
@@ -36,17 +36,19 @@ const ContactUsPage = () => {
                                         </div>
                                         <div>
                                             <p className="text-graytext text-base mb-1">Phone Number</p>
-                                            <h4 className="text-white">USA: <Link href="/" className="text-blue underline">
-                                                951-543-2512 x285</Link></h4>
+                                            <h4 className="text-white"><Link href="tel:+2348054306710" className="text-blue underline">
+                                                +234 805 430 6710</Link></h4>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-4">
-                                        <div className="size-[55px] bg-offgray rounded-xl flex items-center justify-center">
-                                            <Image src={Location} alt="mail" quality={100} width={100} height={100} className="w-[18px] h-auto" />
+                                        <div>
+                                            <div className="size-[55px] bg-offgray rounded-xl flex items-center justify-center">
+                                                <Image src={Location} alt="mail" quality={100} width={100} height={100} className="w-[18px] h-auto" />
+                                            </div>
                                         </div>
                                         <div>
                                             <p className="text-graytext text-base mb-1">Location</p>
-                                            <h4 className="text-white">8739 Magnolia Corners, O&apos;Keefeburgh 30186</h4>
+                                            <h4 className="text-white">CFQC+QPV, C & I Leasing Dr, Lekki Phase I, Lekki 106104, Lagos</h4>
                                         </div>
                                     </div>
                                 </div>

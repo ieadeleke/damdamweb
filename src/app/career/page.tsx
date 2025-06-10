@@ -12,7 +12,7 @@ const CareersPage = () => {
                     <div className="hidden md:block md:w-[500px]">
                         <Image src={CareerImg} alt="mail" quality={100} width={1000} height={1000} className="h-full w-auto" />
                     </div>
-                    <div className="flex-1 text-right pt-32 pb-20 md:pb-32">
+                    <div className="flex-1 text-right pt-32 pb-10 md:pb-32">
                         <p className="text-sm md:text-lg text-[#DADADA] mb-4 md:mb-2 w-[50%] md:w-[425px] ml-auto">At DamDam Global, we're more than a tech company</p>
                         <h2 className="text-5xl md:text-8xl leading-[1.4] md:leading-[1.2] text-white font-camptonbold">
                             Your Tech <br /> Career Starts

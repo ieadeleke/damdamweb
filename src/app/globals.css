@@ -243,3 +243,36 @@ footer {
   position: absolute;
   top: -200px;
 }
+
+.ant-drawer-body {
+  padding: 0px !important;
+  font-family: 'Campton Medium' !important;
+  background: var(--black);
+}
+
+.ant-drawer-content {
+  width: 100% !important;
+}
+
+.ant-drawer-content-wrapper {
+  width: 100% !important;
+}
+
+.ant-drawer-header {
+  display: none !important;
+}
+
+
+@media screen and (max-width: 720px) {
+  .hero-bg {
+    margin: 0;
+    height: unset;
+    padding-bottom: 100px;
+    padding-top: 140px;
+    background:
+      linear-gradient(to right, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('/hero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

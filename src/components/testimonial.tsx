@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Image from "next/image";
 import QuoteImg from '@/assets/quotes.png';
+import { FiUser } from "react-icons/fi";
 
 interface Testimonial {
   id: number;
@@ -65,11 +66,12 @@ export default function TestimonialCarousel() {
   const current = testimonials[currentIndex];
 
   return (
-    <div className="text-white min-h-scree flex flex-col justify-center items-center px-8 py-24 relative overflow-hidden">
+    <div className="text-white min-h-scree flex flex-col justify-center items-center px-5 md:px-8 py-20 md:
+    py-24 relative overflow-hidden">
       <div className="glow-top"></div>
       <div className="z-40">
         <div className="text-center mb-8 max-w-2xl">
-          <h1 className="text-4xl md:text-5xl leading-[1.9] md:leading-[1.3] font-bold mb-6">
+          <h1 className="text-3xl md:text-5xl leading-[1.5] w-[80%] md:w-full mx-auto md:leading-[1.3] font-bold mb-6">
             What Our <span className="text-blue">Partners</span> Are Saying
           </h1>
           {/* <p className="text-[#BECCFF] max-w-[470px] mx-auto text-lg">
@@ -83,34 +85,34 @@ export default function TestimonialCarousel() {
               key={index}
               onClick={() => goToTestimonial(index)}
               className={`rounded-full border-2 transition-all duration-300 ${index === currentIndex
-                ? 'w-24 h-24 border-blue-400 bg-[#00071D]'
+                ? 'w-24 h-24 border-blue-400 flex items-center justify-center bg-[#00071D]'
                 : index === currentIndex - 1 ||
                   (currentIndex === 0 && index === testimonials.length - 1) ||
                   index === currentIndex + 1 ||
                   (currentIndex === testimonials.length - 1 && index === 0)
-                  ? 'w-16 h-16 border-blue-300/60 bg-[#00071D] hover:border-blue-300'
-                  : 'w-12 h-12 border-gray-500 hover:border-gray-400'
+                  ? 'w-16 h-16 border-blue-300/60 flex items-center justify-center bg-[#00071D] hover:border-blue-300'
+                  : 'w-12 h-12 border-gray-500 flex items-center justify-center hover:border-gray-400'
                 }`}
-            />
+            ><FiUser className={`${currentIndex === index ? 'text-4xl' : 'text-base'}`} /></button>
           ))}
         </div>
         <div className="text-center relative">
           <div className="mb-3">
-            <h3 className="text-xl font-semibold mb-1">{current.name}</h3>
+            <h3 className="text-lg md:text-xl font-semibold mb-1">{current.name}</h3>
             <p className="text-[#AAAAAA] text-base italic mb-2">{current.location}</p>
-            <p className="text-[#AAAAAA] text-base italic mb-2">{current.title}</p>
-            <div className="h-[2px] w-[60px] block mx-auto bg-white"></div>
+            <p className="text-[#AAAAAA] text-sm md:text-base italic mb-2">{current.title}</p>
+            <div className="h-[1px] md:h-[2px] w-[60px] block mx-auto bg-white"></div>
           </div>
-          <div className="mb-5">
+          <div className="mb-14 md:mb-5">
             {/* <div className="text-4xl text-blue-400 mb-4">"</div> */}
             <Image src={QuoteImg} alt="quote" quality={100} width={1200} height={1200} className="max-w-[30px] h-full w-full mx-auto mb-5" />
-            <p className="text-lg text-[#AAAAAA] leading-relaxed md:max-w-[550px] mx-auto">
+            <p className="text-base md:text-lg text-[#AAAAAA] leading-relaxed md:max-w-[550px] mx-auto">
               {current.quote}
             </p>
           </div>
 
           {/* Navigation Arrows */}
-          <div className="flex justify-between items-center md:max-w-[210px] mx-auto">
+          <div className="flex justify-between items-center w-[50%] md:w-full md:max-w-[210px] mx-auto">
             <button
               onClick={prevTestimonial}
               className="p-2 rounded-full hover:bg-slate-700 transition-colors"

@@ -54,10 +54,10 @@ const AboutUsPage = () => {
                         </h3>
                     </div>
                     <div className="max-w-[880px flex-1 mx-aut">
-                        <p className="text-base leading-loose mb-5 md:mb-10 text-[#B2B2B2]">
+                        <p className="text-sm md:text-base leading-loose mb-5 md:mb-10 text-[#B2B2B2]">
                             DamDam Global is a technology consulting and software development company on a mission to accelerate Africa&apos;s digital transformation. We design and deliver powerful digital solutions that help organizations run smarter, serve better, and scale faster. Our work goes beyond code, we partner with our clients to solve real problems using technology.
                         </p>
-                        <p className="text-base leading-loose text-[#B2B2B2]">
+                        <p className="text-sm md:text-base leading-loose text-[#B2B2B2]">
                             We have worked with government agencies, financial institutions, and startups to improve revenue collection, streamline service delivery, and build systems that drive efficiency, accountability, and growth.
                         </p>
                     </div>
@@ -72,36 +72,36 @@ const AboutUsPage = () => {
             <div className="flex gap-0 mt-0 px-5 md:px-20 relative">
                 <div className="md:w-[350px]"></div>
                 <div className="flex-1 z-30">
-                    <h3 className="text-2xl md:text-4xl leading-normal leading-normal text-[#D5D5D5] mb-10 max-w-[1000px] mx-auto">
+                    <h3 className="text-xl md:text-4xl leading-normal leading-normal text-[#D5D5D5] mb-10 max-w-[1000px] mx-auto">
                         Our solutions power digital transformation — enabling efficiency, security, and impact at scale.
                     </h3>
                     <div className="md:w-[773px] mx-auto">
                         <div className="mb-8">
-                            <h4 className="text-xl md:text-[28px] mb-2 md:mb-4">Digital Infrastructure</h4>
+                            <h4 className="text-lg md:text-[28px] mb-1 md:mb-2 md:mb-4">Digital Infrastructure</h4>
                             <p className="text-sm md:text-base leading-loose md:leading-loose text-[#B2B2B2]">
                                 Robust, scalable systems that serve as the backbone for modern operations — from APIs to cloud-native architecture.
                             </p>
                         </div>
                         <div className="mb-8">
-                            <h4 className="text-xl md:text-[28px] mb-2 md:mb-4">Seamless Payments</h4>
+                            <h4 className="text-lg md:text-[28px] mb-1 md:mb-2 md:mb-4">Seamless Payments</h4>
                             <p className="text-sm md:text-base leading-loose md:leading-loose text-[#B2B2B2]">
                                 Secure, intelligent payment systems that simplify financial flows across organizations, platforms, and services.
                             </p>
                         </div>
                         <div className="mb-8">
-                            <h4 className="text-xl md:text-[28px] mb-2 md:mb-4">Enterprise Platforms</h4>
+                            <h4 className="text-lg md:text-[28px] mb-1 md:mb-2 md:mb-4">Enterprise Platforms</h4>
                             <p className="text-sm md:text-base leading-loose md:leading-loose text-[#B2B2B2]">
                                 End-to-end tools tailored for complex operational needs — from workforce systems to customer engagement platforms.
                             </p>
                         </div>
                         <div className="mb-8">
-                            <h4 className="text-xl md:text-[28px] mb-2 md:mb-4">Government Technology</h4>
+                            <h4 className="text-lg md:text-[28px] mb-1 md:mb-2 md:mb-4">Government Technology</h4>
                             <p className="text-sm md:text-base leading-loose md:leading-loose text-[#B2B2B2]">
                                 Solutions that support tax, identity, billing, and transparency — built to scale and serve the public good.
                             </p>
                         </div>
                         <div className="mb-8">
-                            <h4 className="text-xl md:text-[28px] mb-2 md:mb-4">Custom Software Development</h4>
+                            <h4 className="text-lg md:text-[28px] mb-1 md:mb-2 md:mb-4">Custom Software Development</h4>
                             <p className="text-sm md:text-base leading-loose md:leading-loose text-[#B2B2B2] md:w-[90%]">
                                 Tailored digital products designed to meet your specific objectives — functional, efficient, and elegant.
                             </p>
@@ -176,7 +176,7 @@ const AboutUsPage = () => {
                         We create experiences that <span className="text-blue italic">connect</span>, <span className="text-blue italic">inspire</span>, and <span className="text-blue italic">convert</span>
                     </p>
                 </div>
-                <div className="py-14 md:py-20 md:px-6 mb-12 md:mb-8 flex flex-col md:grid grid-cols-4 gap-10 max-w-[1466px] mx-auto">
+                <div className="py-14 md:py-20 md:px-6 mb-5 md:mb-8 flex flex-col md:grid grid-cols-4 gap-10 max-w-[1466px] mx-auto">
                     <div className="text-center">
                         <Image src={Logo} alt="logo" quality={100} width={1000} height={1000} className="h-auto w-[40px] mx-auto mb-5 md:mb-10 object-fit object-cover" />
                         <h4 className="text-xl md:text-2xl font- text-white mb-2">Client-centric approach</h4>
@@ -207,12 +207,12 @@ const AboutUsPage = () => {
                     </div>
                 </div>
             </div>
-            <section className="px-5 md:px-48 py-28 bg-[#101010]">
+            <section className="px-5 md:px-48 py-20 md:py-28 bg-[#101010]">
                 <div className="flex flex-col md:flex-row md:items-center gap-3 md:gap-20 justify-between mb-5 md:mb-14">
-                    <h3 className="text-3xl md:text-6xl text-white leading-relaxed md:leading-[1.1] md:max-w-[300px]">
+                    <h3 className="text-2xl md:text-6xl text-white leading-relaxed md:leading-[1.1] md:max-w-[300px]">
                         Digital Infrastructure
                     </h3>
-                    <p className="text-base md:text-lg leading-loose md:leading-loose font-camptonlight text-[#B2B2B2] max-w-[500px]">
+                    <p className="text-sm md:text-lg leading-loose md:leading-loose font-camptonlight text-[#B2B2B2] max-w-[500px]">
                         At DamDam Global, we provide practical, reliable, and tailored technology services that help businesses and government agencies grow, improve operations, and deliver better services to their users.
                     </p>
                 </div>
@@ -221,7 +221,7 @@ const AboutUsPage = () => {
                         <div className={`flex flex-col gap-5 h-full w-full relative items-center`}>
                             <div className="flex w-full flex-co items-center relative justify-between h-full">
                                 <div>
-                                    <h4 className="text-lg text-white w-full vertical-tex whitespace-nowrap">Software Development</h4>
+                                    <h4 className="text-base md:text-lg text-white w-full vertical-tex whitespace-nowrap">Software Development</h4>
                                 </div>
                                 <div>
                                     <h4 className="text-base text-[#E5E5E5]">01</h4>
@@ -241,7 +241,7 @@ const AboutUsPage = () => {
                         <div className={`flex flex-col gap-5 h-full w-full relative items-center`}>
                             <div className="flex w-full flex-co items-center relative justify-between h-full">
                                 <div>
-                                    <h4 className="text-lg text-white w-full vertical-tex whitespace-nowrap">UI & UX Design</h4>
+                                    <h4 className="text-base md:text-lg text-white w-full vertical-tex whitespace-nowrap">UI & UX Design</h4>
                                 </div>
                                 <div>
                                     <h4 className="text-base text-[#E5E5E5]">02</h4>
@@ -261,7 +261,7 @@ const AboutUsPage = () => {
                         <div className={`flex flex-col gap-5 h-full w-full relative items-center`}>
                             <div className="flex w-full flex-co items-center relative justify-between h-full">
                                 <div>
-                                    <h4 className="text-lg text-white w-full vertical-tex whitespace-nowrap">Data Analytics & AI</h4>
+                                    <h4 className="text-base md:text-lg text-white w-full vertical-tex whitespace-nowrap">Data Analytics & AI</h4>
                                 </div>
                                 <div>
                                     <h4 className="text-base text-[#E5E5E5]">03</h4>
@@ -277,11 +277,11 @@ const AboutUsPage = () => {
                             </div>
                         </div>
                     </div>
-                    <div className={`flex h-full relative cursor-pointer infra pt-6 pb-1 px-2`} onClick={() => setCurrentInfrastructureView(3)}>
+                    <div className={`flex h-full relative cursor-pointer infra border-b-2 pt-6 pb-1 border-solid border-[#8B8B8B] px-2`} onClick={() => setCurrentInfrastructureView(3)}>
                         <div className={`flex flex-col gap-5 h-full w-full relative items-center`}>
                             <div className="flex w-full flex-co items-center relative justify-between h-full">
                                 <div>
-                                    <h4 className="text-lg text-white w-full vertical-tex whitespace-nowrap">IT Consultancy & Digital Transformation</h4>
+                                    <h4 className="text-base md:text-lg text-white w-full vertical-tex whitespace-nowrap">IT Consultancy & Digital Transformation</h4>
                                 </div>
                                 <div>
                                     <h4 className="text-base text-[#E5E5E5]">04</h4>
@@ -297,11 +297,11 @@ const AboutUsPage = () => {
                             </div>
                         </div>
                     </div>
-                    <div className={`flex h-full relative cursor-pointer infra pt-6 pb-1 px-2`} onClick={() => setCurrentInfrastructureView(4)}>
+                    <div className={`flex h-full relative cursor-pointer infra border-b-2 pt-6 pb-1 border-solid border-[#8B8B8B] px-2`} onClick={() => setCurrentInfrastructureView(4)}>
                         <div className={`flex flex-col gap-5 h-full w-full relative items-center`}>
                             <div className="flex w-full flex-co items-center relative justify-between h-full">
                                 <div>
-                                    <h4 className="text-lg text-white w-full vertical-tex whitespace-nowrap">Cloud Solutions & Infrastructure</h4>
+                                    <h4 className="text-base md:text-lg text-white w-full vertical-tex whitespace-nowrap">Cloud Solutions & Infrastructure</h4>
                                 </div>
                                 <div>
                                     <h4 className="text-base text-[#E5E5E5]">05</h4>
@@ -317,11 +317,11 @@ const AboutUsPage = () => {
                             </div>
                         </div>
                     </div>
-                    <div className={`flex h-full relative cursor-pointer infra pt-6 pb-1 px-2`} onClick={() => setCurrentInfrastructureView(5)}>
+                    <div className={`flex h-full relative cursor-pointer infra pt-6 pb-0 px-2`} onClick={() => setCurrentInfrastructureView(5)}>
                         <div className={`flex flex-col gap-5 h-full w-full relative items-center`}>
                             <div className="flex w-full flex-co items-center relative justify-between h-full">
                                 <div>
-                                    <h4 className="text-lg text-white w-full vertical-tex whitespace-nowrap">Payment Portals & Payroll Services</h4>
+                                    <h4 className="text-base md:text-lg text-white w-full vertical-tex whitespace-nowrap">Payment Portals & Payroll Services</h4>
                                 </div>
                                 <div>
                                     <h4 className="text-base text-[#E5E5E5]">06</h4>
