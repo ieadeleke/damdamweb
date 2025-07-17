@@ -36,8 +36,8 @@ const ContactUsPage = () => {
                                         </div>
                                         <div>
                                             <p className="text-graytext text-base mb-1">Phone Number</p>
-                                            <h4 className="text-white"><Link href="tel:+2348054306710" className="text-blue underline">
-                                                +234 805 430 6710</Link></h4>
+                                            <h4 className="text-white"><Link href="tel:+2348183473250" className="text-blue underline">
+                                                +234 818 347 3250</Link></h4>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-4">
@@ -48,7 +48,7 @@ const ContactUsPage = () => {
                                         </div>
                                         <div>
                                             <p className="text-graytext text-base mb-1">Location</p>
-                                            <h4 className="text-white">CFQC+QPV, C & I Leasing Dr, Lekki Phase I, Lekki 106104, Lagos</h4>
+                                            <Link href="https://maps.app.goo.gl/GhhNmD7cPWYz6UQd9" target="_blank" className="text-white underline">C & I Leasing Dr, Lekki Phase I, Lekki 106104, Lagos</Link>
                                         </div>
                                     </div>
                                 </div>

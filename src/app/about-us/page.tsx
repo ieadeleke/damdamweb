@@ -8,6 +8,20 @@ import CareerImg from "@/assets/career.png";
 import HeroImg from "@/assets/about.png";
 import SearchImg from "@/assets/search.svg";
 import BotHandImg from "@/assets/bot.png";
+
+import AIImg from "@/assets/icons/damdam/ai.svg";
+import BotsImg from "@/assets/icons/damdam/bots.svg";
+import DesignImg from "@/assets/icons/damdam/design.svg";
+import DevImg from "@/assets/icons/damdam/dev.svg";
+import DiscoveryImg from "@/assets/icons/damdam/discovery.svg";
+
+import UserImg from "@/assets/icons/damdam/user.svg";
+import CuttingImg from "@/assets/icons/damdam/cutting.svg";
+import ResultsImg from "@/assets/icons/damdam/results.svg";
+import GlobeImg from "@/assets/icons/damdam/globe.svg";
+
+
+
 import Logo from "@/assets/logo.png";
 import ArrowImg from "@/assets/arrow.png";
 import Image from "next/image";
@@ -42,7 +56,7 @@ const AboutUsPage = () => {
 
     return (
         <AppLayout>
-            <div className="px-5 md:px-20 py-36 pb-12 md:pb-24">
+            <div className="px-5 md:px-20 py-36 pb-12 md:pb-20">
                 {/* <div className="flex flex-col md:grid grid-cols-2 gap-5 md:gap-0 md:items-start max-w-[1630px] mx-auto pb-10 md:pb-24"> */}
                 <div className="flex flex-col md:flex md:flex-row grid-cols-2 gap-5 md:gap-16 md:items-start max-w-[1630px] mx-auto pb-10 md:pb-24">
                     <div className="w-max">
@@ -54,10 +68,10 @@ const AboutUsPage = () => {
                         </h3>
                     </div>
                     <div className="max-w-[880px flex-1 mx-aut">
-                        <p className="text-sm md:text-base leading-loose mb-5 md:mb-10 text-[#B2B2B2]">
+                        <p className="text-sm md:text-base leading-loose md:leading-loose font-camptonlight mb-5 md:mb-10 text-[#B2B2B2]">
                             DamDam Global is a technology consulting and software development company on a mission to accelerate Africa&apos;s digital transformation. We design and deliver powerful digital solutions that help organizations run smarter, serve better, and scale faster. Our work goes beyond code, we partner with our clients to solve real problems using technology.
                         </p>
-                        <p className="text-sm md:text-base leading-loose text-[#B2B2B2]">
+                        <p className="text-sm md:text-base leading-loose md:leading-loose font-camptonlight text-[#B2B2B2]">
                             We have worked with government agencies, financial institutions, and startups to improve revenue collection, streamline service delivery, and build systems that drive efficiency, accountability, and growth.
                         </p>
                     </div>
@@ -72,10 +86,10 @@ const AboutUsPage = () => {
             <div className="flex gap-0 mt-0 px-5 md:px-20 relative">
                 <div className="md:w-[350px]"></div>
                 <div className="flex-1 z-30">
-                    <h3 className="text-xl md:text-4xl leading-normal leading-normal text-[#D5D5D5] mb-10 max-w-[1000px] mx-auto">
+                    <h3 className="text-xl md:text-4xl leading-normal md:leading-relaxed text-[#D5D5D5] mb-10 max-w-[1000px] mx-auto">
                         Our solutions power digital transformation — enabling efficiency, security, and impact at scale.
                     </h3>
-                    <div className="md:w-[773px] mx-auto">
+                    <div className="md:w-[600px] 3xl:w-[773px] mx-auto">
                         <div className="mb-8">
                             <h4 className="text-lg md:text-[28px] mb-1 md:mb-2 md:mb-4">Digital Infrastructure</h4>
                             <p className="text-sm md:text-base leading-loose md:leading-loose text-[#B2B2B2]">
@@ -121,7 +135,7 @@ const AboutUsPage = () => {
                         spaceBetween={20} breakpoints={breakpoints} centeredSlides={false} slidesOffsetBefore={50}
                     >
                         <SwiperSlide key={1} className="p-5 rounded-[9px] min-h-[340px] rounded-[9px] slider-bg">
-                            <Image src={Logo} alt="logo" quality={100} width={1000} height={1000} className="h-auto w-[40px] mb-20 object-fit object-cover" />
+                            <Image src={DiscoveryImg} alt="discovery" quality={100} width={1000} height={1000} className="h-auto w-[30px] mb-20 object-fit object-cover" />
                             <div>
                                 <h4 className="text-white text-2xl mb-3">Discovery</h4>
                                 <p className="text-white text-sm leading-loose font-camptonlight">
@@ -130,7 +144,7 @@ const AboutUsPage = () => {
                             </div>
                         </SwiperSlide>
                         <SwiperSlide key={2} className="p-5 rounded-[9px] min-h-[340px] rounded-[9px] slider-bg">
-                            <Image src={Logo} alt="logo" quality={100} width={1000} height={1000} className="h-auto w-[40px] mb-20 object-fit object-cover" />
+                            <Image src={DesignImg} alt="design" quality={100} width={1000} height={1000} className="h-auto w-[30px] mb-20 object-fit object-cover" />
                             <div>
                                 <h4 className="text-white text-2xl mb-3">Design</h4>
                                 <p className="text-white text-sm leading-loose font-camptonlight">
@@ -139,7 +153,7 @@ const AboutUsPage = () => {
                             </div>
                         </SwiperSlide>
                         <SwiperSlide key={3} className="p-5 rounded-[9px] min-h-[340px] rounded-[9px] slider-bg">
-                            <Image src={Logo} alt="logo" quality={100} width={1000} height={1000} className="h-auto w-[40px] mb-20 object-fit object-cover" />
+                            <Image src={DevImg} alt="development" quality={100} width={1000} height={1000} className="h-auto w-[35px] mb-20 object-fit object-cover" />
                             <div>
                                 <h4 className="text-white text-2xl mb-3">Development</h4>
                                 <p className="text-white text-sm leading-loose font-camptonlight">
@@ -148,7 +162,7 @@ const AboutUsPage = () => {
                             </div>
                         </SwiperSlide>
                         <SwiperSlide key={4} className="p-5 rounded-[9px] min-h-[340px] rounded-[9px] slider-bg">
-                            <Image src={Logo} alt="logo" quality={100} width={1000} height={1000} className="h-auto w-[40px] mb-20 object-fit object-cover" />
+                            <Image src={AIImg} alt="ai" quality={100} width={1000} height={1000} className="h-auto w-[30px] mb-20 object-fit object-cover" />
                             <div>
                                 <h4 className="text-white text-2xl mb-3">AI Leaning</h4>
                                 <p className="text-white text-sm leading-loose font-camptonlight">
@@ -157,7 +171,7 @@ const AboutUsPage = () => {
                             </div>
                         </SwiperSlide>
                         <SwiperSlide key={5} className="p-5 rounded-[9px] min-h-[340px] rounded-[9px] slider-bg">
-                            <Image src={Logo} alt="logo" quality={100} width={1000} height={1000} className="h-auto w-[40px] mb-20 object-fit object-cover" />
+                            <Image src={BotsImg} alt="bot" quality={100} width={1000} height={1000} className="h-auto w-[50px] mb-20 object-fit object-cover" />
                             <div>
                                 <h4 className="text-white text-2xl mb-3">ChatBox</h4>
                                 <p className="text-white text-sm leading-loose font-camptonlight">
@@ -178,28 +192,28 @@ const AboutUsPage = () => {
                 </div>
                 <div className="py-14 md:py-20 md:px-6 mb-5 md:mb-8 flex flex-col md:grid grid-cols-4 gap-10 max-w-[1466px] mx-auto">
                     <div className="text-center">
-                        <Image src={Logo} alt="logo" quality={100} width={1000} height={1000} className="h-auto w-[40px] mx-auto mb-5 md:mb-10 object-fit object-cover" />
+                        <Image src={UserImg} alt="user" quality={100} width={1000} height={1000} className="h-auto w-[40px] mx-auto mb-5 md:mb-10 object-fit object-cover" />
                         <h4 className="text-xl md:text-2xl font- text-white mb-2">Client-centric approach</h4>
                         <p className="text-sm text-[#B2B2B2] leading-loose">
                             Your vision is our utmost priority
                         </p>
                     </div>
                     <div className="text-center">
-                        <Image src={Logo} alt="logo" quality={100} width={1000} height={1000} className="h-auto w-[40px] mx-auto mb-5 md:mb-10 object-fit object-cover" />
+                        <Image src={CuttingImg} alt="cutting-edge design" quality={100} width={1000} height={1000} className="h-auto w-[40px] mx-auto mb-5 md:mb-10 object-fit object-cover" />
                         <h4 className="text-xl md:text-2xl font- text-white mb-2">Cutting-edge design</h4>
                         <p className="text-sm text-[#B2B2B2] leading-loose">
                             Modern, sleek, and user-focused solutions
                         </p>
                     </div>
                     <div className="text-center">
-                        <Image src={Logo} alt="logo" quality={100} width={1000} height={1000} className="h-auto w-[40px] mx-auto mb-5 md:mb-10 object-fit object-cover" />
+                        <Image src={ResultsImg} alt="results driven" quality={100} width={1000} height={1000} className="h-auto w-[40px] mx-auto mb-5 md:mb-10 object-fit object-cover" />
                         <h4 className="text-xl md:text-2xl font- text-white mb-2">Results-driven strategy</h4>
                         <p className="text-sm text-[#B2B2B2] leading-loose">
                             Creativity meets performance
                         </p>
                     </div>
                     <div className="text-center">
-                        <Image src={Logo} alt="logo" quality={100} width={1000} height={1000} className="h-auto w-[40px] mx-auto mb-5 md:mb-10 object-fit object-cover" />
+                        <Image src={GlobeImg} alt="globe" quality={100} width={1000} height={1000} className="h-auto w-[40px] mx-auto mb-5 md:mb-10 object-fit object-cover" />
                         <h4 className="text-xl md:text-2xl font- text-white mb-2">Global experience</h4>
                         <p className="text-sm text-[#B2B2B2] leading-loose">
                             Trusted by brands worldwide

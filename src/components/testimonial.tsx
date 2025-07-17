@@ -4,47 +4,53 @@ import Image from "next/image";
 import QuoteImg from '@/assets/quotes.png';
 import { FiUser } from "react-icons/fi";
 
+import LarryImg from '@/assets/icons/avatar/larry.png';
+import AdviserImg from '@/assets/icons/avatar/adviser.png';
+import LaswaImg from '@/assets/icons/avatar/laswa.png';
+import AccGeneralImg from '@/assets/icons/avatar/acc-general.png';
+
+
 interface Testimonial {
   id: number;
   name: string;
   location: string;
   title?: string;
   quote: string;
-  avatar: string;
+  avatar: any;
 }
 
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    name: "State Government Digital Unit",
-    location: "Project Lead",
+    name: "Dr. Shefiu Abiodun Muritala",
+    location: "Accountant General of Lagos",
     // title: "Principal Harmony Cathedral",
     quote: "Working with DamDam Global helped us move from chaos to clarity. Their team took the time to understand our operations and delivered a system that exceeded our expectations.",
-    avatar: "/api/placeholder/60/60"
+    avatar: AccGeneralImg
   },
   {
     id: 2,
-    name: "Local Government",
-    location: "Revenue Manager",
+    name: "Mr. Oluwadamilola Emmanuel",
+    location: "General Manager, LASWA",
     // title: "Teacher at Riverside Elementary",
     quote: "We used to chase paper and receipts. Now, we have full visibility of our collections and field agents in real time. This solution has truly changed how we work",
-    avatar: "/api/placeholder/60/60"
+    avatar: LaswaImg
   },
   {
     id: 3,
-    name: "Public Agency",
-    location: "Operations Director",
+    name: "Abdul-Kabir Opeyemi Ogungbo",
+    location: "Special Adviser to the Lagos State Governor on Taxation and Revenue",
     // title: "District Administrator",
     quote: "They did not just build what we asked for, they challenged us to think bigger and guided us through the entire transformation journey.",
-    avatar: "/api/placeholder/60/60"
+    avatar: AdviserImg
   },
   {
     id: 4,
-    name: "Tech-Enabled Logistics Startup",
-    location: "Founder",
+    name: "Larry Gaaga",
+    location: "CEO Gaaga Muzik Ent",
     // title: "High School Principal",
     quote: "From day one, DamDam Global felt like an extension of our team. Transparent, innovative, and very easy to work with.",
-    avatar: "/api/placeholder/60/60"
+    avatar: LarryImg
   }
 ];
 
@@ -80,7 +86,7 @@ export default function TestimonialCarousel() {
         </div>
 
         <div className="flex items-center justify-center mb-8 space-x-4">
-          {testimonials.map((_, index) => (
+          {testimonials.map((testimonial, index) => (
             <button
               key={index}
               onClick={() => goToTestimonial(index)}
@@ -93,7 +99,9 @@ export default function TestimonialCarousel() {
                   ? 'w-16 h-16 border-blue-300/60 flex items-center justify-center bg-[#00071D] hover:border-blue-300'
                   : 'w-12 h-12 border-gray-500 flex items-center justify-center hover:border-gray-400'
                 }`}
-            ><FiUser className={`${currentIndex === index ? 'text-4xl' : 'text-base'}`} /></button>
+            >
+              <Image src={testimonial.avatar} alt={testimonial.name} />
+            </button>
           ))}
         </div>
         <div className="text-center relative">

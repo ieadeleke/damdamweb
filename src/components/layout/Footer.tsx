@@ -37,7 +37,7 @@ const Footer = (props: FooterInterface) => {
                         <Link href="" className="text-sm text-white"><img src={Instagram.src} className="w-[30px] md:w-[35px] h-auto" alt="instagram logo" /></Link>
                     </li>
                     <li>
-                        <Link href="" className="text-sm text-white"><img src={LinkedIn.src} className="w-[30px] md:w-[35px] h-auto" alt="linkedin logo" /></Link>
+                        <Link href="https://ng.linkedin.com/company/damdam-global" target="_blank" className="text-sm text-white"><img src={LinkedIn.src} className="w-[30px] md:w-[35px] h-auto" alt="linkedin logo" /></Link>
                     </li>
                     <li>
                         <Link href="" className="text-sm text-white"><img src={Twitter.src} className="w-[30px] md:w-[35px] h-auto" alt="twitter logo" /></Link>

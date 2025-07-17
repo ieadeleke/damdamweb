@@ -33,7 +33,7 @@ export default function Home() {
         <div className="md:max-w-[1700px] mx-auto">
           <div className="hidden md:block">
             <h1 className="text-4xl md:text-7xl text-white md:flex mb-1 md:mb-5 gap-10 items-center">
-              <p className="text-blue text-sm w-[50%] mb-3 md:mb-0 md:w-full md:text-lg md:w-[230px]">
+              <p className="text-blue text-sm w-[50%] mb-3 md:mb-0 md:text-lg md:w-[230px]">
                 Innovating the Future, One Line of Code at a Time.
               </p>Stay ahead of the curve with
             </h1>
@@ -63,8 +63,11 @@ export default function Home() {
       <div className="bg-blue w-full h-[90px]"></div>
       <section className="px-5 md:px-10 pt-20 md:pt-28 max-w-[1600px] mx-auto">
         <h4 className="text-blue text-base md:text-xl mb-2 md:mb-4">What We Do</h4>
-        <p className="text- leading-loose md:leading-[1.6] text-[#B2B2B2] max-w-[1300px] text-base md:text-3xl mb-20 md:mb-20">
-          DamDam Global develops digital solutions that solve complex business and governance problems. Whether it is creating custom software, automating processes, or consulting on digital transformation, we help institutions evolve with confidence and clarity.
+        <p className="text- leading-loose md:leading-[1.6] text-[#B2B2B2] max-w-[1400px] text-base md:text-[26px] mb-5 md:mb-0">
+          DamDam Global develops digital solutions that solve complex business and governance problems.
+        </p>
+        <p className="text- leading-loose md:leading-[1.6] text-[#B2B2B2] max-w-[1400px] text-base md:text-[26px] mb-20 md:mb-20">
+          Whether it is creating custom software, automating processes, or consulting on digital transformation, we help institutions evolve with confidence and clarity.
         </p>
         <div className="flex flex-col md:flex-row gap-10 md:items-center justify-between mb-5 md:mb-14">
           <h4 className="text-2xl md:text-3xl md:text-[46px]">Our Core Offerings:</h4>
@@ -215,7 +218,7 @@ export default function Home() {
         <h4 className="text-blue mb-4 md:mb-5 text-base md:text-3xl">
           Portfolio
         </h4>
-        <p className="text- leading-loose md:leading-normalmd: max-w-[1200px] mb-10 md:mb-16 text-[#B2B2B2] text-base md:text-4xl">
+        <p className="text- leading-loose md:leading-normal md: max-w-[1200px] mb-10 md:mb-16 text-[#B2B2B2] text-base md:text-4xl">
           Our product ecosystem is designed to accelerate growth, enhance public service delivery, and simplify how businesses and citizens engage with technology.
         </p>
         <div className="flex flex-col md:grid grid-cols-2 gap-10 md:gap-10">
@@ -224,7 +227,7 @@ export default function Home() {
               <Image src={Pay4It} alt="mail" quality={100} width={1000} height={1000} className="h-[200px] md:h-[400px] w-full object-fit object-cover mb-6" />
               <div>
                 <h4 className="text-xl md:text-2xl mb-4 text-white">Pay4it</h4>
-                <p className="text- leading-loose md:leading-loose text-[#B2B2B2] text-sm md:text-base font-camptonlight md:max-w-[650px]">
+                <p className="text- leading-loose md:leading-loose text-[#B2B2B2] text-sm md:text-[15px] base font-camptonlight md:max-w-[650px]">
                   Pay4IT empowers businesses, individuals, and governments with innovative financial technology solutions. Whether you are a merchant, a service provider, or an entrepreneur, we have a suite of business solutions specially curated for you. Pay4IT enables digital payments, drives transparency, efficiency, and economic growth across diverse sectors.
                 </p>
               </div>
@@ -302,9 +305,7 @@ export default function Home() {
                 <p className="text- leading-loose md:leading-loose text-[#B2B2B2] text-sm md:text-base font-camptonlight max-w-[620px]">
                   DamDam Global combines field operations, technology enablement, and lean management to ensure high-yield performance. With a focused team of field agents and dedicated operational support, the strategy maximises reach, reduces inefficiencies, and guarantees transparent collections.
                 </p>
-                <p className="text- leading-loose md:leading-loose text-[#B2B2B2] text-sm md:text-base font-camptonlight max-w-[630px]">
-                  The markets in this zone serve over 360,000 traders, making them high-potential zones for informal sector tax remittance and a viable ecosystem for digital enumeration and collections. Given the scale of commercial activity, the informal sector within these markets offers a huge opportunity to generate revenue through physical and technology-enabled tax collection.
-                </p>
+                  {/* The markets in this zone serve over 360,000 traders, making them high-potential zones for informal sector tax remittance and a viable ecosystem for digital enumeration and collections. Given the scale of commercial activity, the informal sector within these markets offers a huge opportunity to generate revenue through physical and technology-enabled tax collection. */}
               </div>
             </Link>
           </div>
