@@ -1,9 +1,11 @@
 import CareerImg from "@/assets/career.png";
+import StarImg from "@/assets/star.png";
+
 import Image from "next/image";
 
 const JobHero = () => {
     return (
-        <div className="flex gap-0 p-0 mb-32 max-w-[1630px] mx-auto">
+        <div className="flex gap-0 p-0 mb-32 relative max-w-[1630px] mx-auto">
             <div className="hidden md:block md:w-[500px]">
                 <Image src={CareerImg} alt="mail" quality={100} width={1000} height={1000} className="h-full w-auto" />
             </div>
@@ -21,6 +23,9 @@ const JobHero = () => {
                 <p className="text-[#DADADA] leading-loose md:leading-loose text-right text-sm md:text-base ml-auto font-camptonlight">
                     We offer more than jobs; we offer career journeys. Whether you are a software engineer, designer, strategist, or project manager, you will find a place here to learn, grow, and do your best work.
                 </p>
+            </div>
+            <div className="absolute -bottom-28 right-0">
+                <Image src={StarImg} alt="rings" quality={100} width={1000} height={1000} className="h-[180px] mx-auto mb-4 w-auto object-center object-cover" />
             </div>
         </div>
     )
