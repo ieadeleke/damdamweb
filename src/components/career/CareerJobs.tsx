@@ -30,7 +30,7 @@ const AllJobs = () => {
                         <h2 className="text-blue text-3xl font-camptonbold">01</h2>
                         <Image src={SearchImg} alt="mail" quality={100} width={1000} height={1000} className="h-full w-[40px]" />
                     </div>
-                    <h4 className="mb-14 text-[#D5D5D5] font-camptonbold text-xl">Legacy Response Strategist</h4>
+                    <h4 className="mb-14 text-[#D5D5D5] font-camptonbold text-xl">Frontend Developer</h4>
                     {/* <p className="text-sm md:text-[13px] text-[#8D8D8D] leading-loose md:leading-loose mb-4">
                             We aim to become Africa&apos;s most trusted partner for digital transformation delivering innovative and reliable technology that helps businesses and public institutions thrive.
                         </p> */}
@@ -38,10 +38,10 @@ const AllJobs = () => {
                 </div>
                 <div className="bg-[#121212] p-6 rounded-[12px]">
                     <div className="flex justify-between mb-4 md:mb-3 items-center">
-                        <h2 className="text-blue text-3xl font-camptonbold">01</h2>
+                        <h2 className="text-blue text-3xl font-camptonbold">02</h2>
                         <Image src={SearchImg} alt="mail" quality={100} width={1000} height={1000} className="h-full w-[40px]" />
                     </div>
-                    <h4 className="mb-14 text-[#D5D5D5] font-camptonbold text-xl">Legacy Response Strategist</h4>
+                    <h4 className="mb-14 text-[#D5D5D5] font-camptonbold text-xl">Backend Developer</h4>
                     {/* <p className="text-sm md:text-[13px] text-[#8D8D8D] leading-loose md:leading-loose mb-4">
                             We aim to become Africa&apos;s most trusted partner for digital transformation delivering innovative and reliable technology that helps businesses and public institutions thrive.
                         </p> */}
@@ -49,10 +49,10 @@ const AllJobs = () => {
                 </div>
                 <div className="bg-[#121212] p-6 rounded-[12px]">
                     <div className="flex justify-between mb-4 md:mb-3 items-center">
-                        <h2 className="text-blue text-3xl font-camptonbold">01</h2>
+                        <h2 className="text-blue text-3xl font-camptonbold">03</h2>
                         <Image src={SearchImg} alt="mail" quality={100} width={1000} height={1000} className="h-full w-[40px]" />
                     </div>
-                    <h4 className="mb-14 text-[#D5D5D5] font-camptonbold text-xl">Legacy Response Strategist</h4>
+                    <h4 className="mb-14 text-[#D5D5D5] font-camptonbold text-xl">Q&A Specialist</h4>
                     {/* <p className="text-sm md:text-[13px] text-[#8D8D8D] leading-loose md:leading-loose mb-4">
                             We aim to become Africa&apos;s most trusted partner for digital transformation delivering innovative and reliable technology that helps businesses and public institutions thrive.
                         </p> */}
@@ -60,10 +60,10 @@ const AllJobs = () => {
                 </div>
                 <div className="bg-[#121212] p-6 rounded-[12px]">
                     <div className="flex justify-between mb-4 md:mb-3 items-center">
-                        <h2 className="text-blue text-3xl font-camptonbold">01</h2>
+                        <h2 className="text-blue text-3xl font-camptonbold">04</h2>
                         <Image src={SearchImg} alt="mail" quality={100} width={1000} height={1000} className="h-full w-[40px]" />
                     </div>
-                    <h4 className="mb-14 text-[#D5D5D5] font-camptonbold text-xl">Legacy Response Strategist</h4>
+                    <h4 className="mb-14 text-[#D5D5D5] font-camptonbold text-xl">Product Analyst</h4>
                     {/* <p className="text-sm md:text-[13px] text-[#8D8D8D] leading-loose md:leading-loose mb-4">
                             We aim to become Africa&apos;s most trusted partner for digital transformation delivering innovative and reliable technology that helps businesses and public institutions thrive.
                         </p> */}
@@ -71,10 +71,10 @@ const AllJobs = () => {
                 </div>
                 <div className="bg-[#121212] p-6 rounded-[12px]">
                     <div className="flex justify-between mb-4 md:mb-3 items-center">
-                        <h2 className="text-blue text-3xl font-camptonbold">01</h2>
+                        <h2 className="text-blue text-3xl font-camptonbold">05</h2>
                         <Image src={SearchImg} alt="mail" quality={100} width={1000} height={1000} className="h-full w-[40px]" />
                     </div>
-                    <h4 className="mb-14 text-[#D5D5D5] font-camptonbold text-xl">Legacy Response Strategist</h4>
+                    <h4 className="mb-14 text-[#D5D5D5] font-camptonbold text-xl">Cloud Engineer</h4>
                     {/* <p className="text-sm md:text-[13px] text-[#8D8D8D] leading-loose md:leading-loose mb-4">
                             We aim to become Africa&apos;s most trusted partner for digital transformation delivering innovative and reliable technology that helps businesses and public institutions thrive.
                         </p> */}
