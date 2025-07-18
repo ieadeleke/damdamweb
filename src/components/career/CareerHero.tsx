@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const JobHero = () => {
     return (
-        <div className="flex gap-0 p-0 max-w-[1630px] mx-auto">
+        <div className="flex gap-0 p-0 mb-32 max-w-[1630px] mx-auto">
             <div className="hidden md:block md:w-[500px]">
                 <Image src={CareerImg} alt="mail" quality={100} width={1000} height={1000} className="h-full w-auto" />
             </div>

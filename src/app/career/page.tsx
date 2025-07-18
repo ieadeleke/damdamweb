@@ -15,7 +15,9 @@ const CareersPage = () => {
             <div className="px-5 md:px-20 p0">
                 <AllJobs />
                 <JobHero />
-                <CompanyValues />
+            </div>
+            <CompanyValues />
+            <div className="px-5 md:px-20 p0">
                 <WhatWeLookFor />
                 <WhyWorkWithUs />
             </div>
