@@ -262,6 +262,30 @@ footer {
   display: none !important;
 }
 
+.lookfor {
+  background: url('/hand.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.frame {
+  background: url('/frame.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ant-modal-content {
+  background: #141414 !important;
+  border-radius: 0px !important;
+  font-family: 'Campton Medium' !important;
+}
+
+.ant-modal {
+  width: 650px !important;
+}
+
 
 @media screen and (max-width: 720px) {
   .hero-bg {
