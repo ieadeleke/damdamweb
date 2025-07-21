@@ -75,7 +75,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col md:grid grid-cols-4 gap-2 md:gap-6">
           <div className="md:border-r border-solid border-[#373737] py-5 md:py-10 md:pr-6">
-            <h4 className="text-white mb-1 md:mb-3 text-lg md:text-xl 4xl:text-2xl font-camptonsemi">Technology Consulting:</h4>
+            <h4 className="text-white mb-1 md:mb-3 text-lg md:text-xl 4xl:text-2xl font-camptonsemi">Technology Consulting</h4>
             <p className="text- leading-loose md:leading-relaxed text-[#B2B2B2] max-w-[400px] text-sm md:text-base 4xl:text-lg font-camptonlight">
               We work with organisations to understand their digital needs, develop a clear strategy, and implement solutions that work. Whether you are launching a new initiative or improving an existing system, we bring clarity to complexity.
             </p>
@@ -87,13 +87,13 @@ export default function Home() {
             </p>
           </div>
           <div className="md:border-r border-solid border-[#373737] py-5 md:py-10 md:pr-6">
-            <h4 className="text-white mb-1 md:mb-3 text-lg md:text-xl 4xl:text-2xl font-camptonsemi">Process Automation:</h4>
+            <h4 className="text-white mb-1 md:mb-3 text-lg md:text-xl 4xl:text-2xl font-camptonsemi">Process Automation</h4>
             <p className="text- leading-loose md:leading-relaxed text-[#B2B2B2] max-w-[400px] text-sm md:text-base 4xl:text-lg font-camptonlight">
               We build intelligent systems that eliminate manual inefficiencies. From revenue tracking to service delivery automation, we help organisations save time and improve accountability.
             </p>
           </div>
           <div className="py-5 md:py-10">
-            <h4 className="text-white mb-1 md:mb-3 text-lg md:text-xl 4xl:text-2xl font-camptonsemi">Fintech Solutions:</h4>
+            <h4 className="text-white mb-1 md:mb-3 text-lg md:text-xl 4xl:text-2xl font-camptonsemi">Fintech Solutions</h4>
             <p className="text- leading-loose md:leading-relaxed text-[#B2B2B2] max-w-[400px] text-sm md:text-base 4xl:text-lg font-camptonlight">
               We develop financial technology platforms that enable digital payments, improve tax collection, and streamline revenue generation for government and business entities alike.
             </p>
@@ -146,7 +146,7 @@ export default function Home() {
           <div>
             <h4 className="text-white text-xl mb-1 md:mb-4 font-camptonbold">Our Mission</h4>
             <p className="text-sm md:text-base font-camptonlight leading-loose md:leading-loose text-[#B2B2B2] max-w-[490px]">
-              Our mission is simple: to create powerful, user-focused digital solutions that drive growth, simplify processes, and unlock new opportunities for our clients.
+              Our mission is to create powerful, user-focused digital solutions that drive growth, simplify processes, and unlock new opportunities for our clients.
             </p>
           </div>
         </div>
@@ -160,7 +160,7 @@ export default function Home() {
               </div>
               <div className={`values-text ${currentValuesView === 0 ? 'show-text' : ''}`}>
                 <p className="text-sm md:text-base font-camptonlight leading-loose md:leading-loose text-[#B2B2B2] max-w-[440px]">
-                  We are driven by results that matter. At DamDam Global, we focus on delivering solutions that create measurable impact for our clients and their communities. Every product we build and every strategy we implement is guided by our comamitment to long-term value and sustainable growth.
+                  We are driven by results that matter. At DamDam Global, we focus on delivering solutions that create measurable impact for our clients and their communities. Every product we build and every strategy we implement is guided by our commitment to long-term value and sustainable growth.
                 </p>
               </div>
             </div>
@@ -182,7 +182,7 @@ export default function Home() {
               </div>
               <div className={`values-text ${currentValuesView === 2 ? 'show-text' : ''}`}>
                 <p className="text-sm md:text-base font-camptonlight leading-loose md:leading-loose text-[#B2B2B2] max-w-[440px]">
-                  Trust is the foundation of every relationship we build. We operate with transparency, accountability and consistency, ensuring our actions align with our words. At DamDam Global, integrity is not optional, it is non-negotiable.
+                  Trust is the foundation of every relationship we build. We operate with transparency, accountability and consistency, ensuring our actions align with our words. At DamDam Global, integrity is non-negotiable.
                 </p>
               </div>
             </div>
@@ -224,7 +224,7 @@ export default function Home() {
         <div className="flex flex-col md:grid grid-cols-2 gap-10 md:gap-10">
           <div>
             <Link href="https://usepay4it.com" target="_blank" rel="noreferrer">
-              <Image src={Pay4It} alt="mail" quality={100} width={1000} height={1000} className="h-[200px] md:h-[400px] w-full object-fit object-cover mb-6" />
+              <Image src={Pay4It} alt="mail" quality={100} width={1000} height={1000} className="h-[250px] md:h-[400px] w-full object-fit object-cover mb-6" />
               <div>
                 <h4 className="text-xl md:text-2xl mb-4 text-white">Pay4it</h4>
                 <p className="text- leading-loose md:leading-loose text-[#B2B2B2] text-sm md:text-[15px] base font-camptonlight md:max-w-[650px]">
@@ -235,7 +235,7 @@ export default function Home() {
           </div>
           <div>
             <Link href="https://payment.usepay4it.com/#/auth/register" target="_blank" rel="noreferrer">
-              <Image src={Paynest} alt="mail" quality={100} width={1000} height={1000} className="h-[200px] md:h-[400px] w-full object-fit object-cover mb-6" />
+              <Image src={Paynest} alt="mail" quality={100} width={1000} height={1000} className="h-[250px] md:h-[400px] w-full object-fit object-cover mb-6" />
               <div>
                 <h4 className="text-xl md:text-2xl mb-4 text-white">PayNest</h4>
                 <p className="text- leading-loose md:leading-loose text-[#B2B2B2] text-sm md:text-base font-camptonlight md:max-w-[650px]">
@@ -246,7 +246,7 @@ export default function Home() {
           </div>
           <div>
             <Link href="https://usepay4it.com" target="_blank" rel="noreferrer">
-              <Image src={Businex} alt="mail" quality={100} width={1000} height={1000} className="h-[200px] md:h-[400px] w-full object-fit object-cover mb-5" />
+              <Image src={Businex} alt="mail" quality={100} width={1000} height={1000} className="h-[250px] md:h-[400px] w-full object-fit object-cover mb-5" />
               <div>
                 <h4 className="text-xl md:text-2xl mb-4 text-white">BusiNex</h4>
                 <p className="text- leading-loose md:leading-loose text-[#B2B2B2] text-sm md:text-base font-camptonlight md:max-w-[640px]">
@@ -260,7 +260,7 @@ export default function Home() {
           </div>
           <div>
             <Link href="https://usepay4it.com" target="_blank" rel="noreferrer">
-              <Image src={Booktime} alt="mail" quality={100} width={1000} height={1000} className="h-[200px] md:h-[400px] w-full object-fit object-cover mb-5" />
+              <Image src={Booktime} alt="mail" quality={100} width={1000} height={1000} className="h-[250px] md:h-[400px] w-full object-fit object-cover mb-5" />
               <div>
                 <h4 className="text-xl md:text-2xl mb-4 text-white">BOOKTIME</h4>
                 <p className="text- leading-loose md:leading-loose text-[#B2B2B2] text-sm md:text-base font-camptonlight md:max-w-[640px]">
@@ -277,7 +277,7 @@ export default function Home() {
           </div>
           <div>
             <Link href="https://usepay4it.com" target="_blank" rel="noreferrer">
-              <Image src={Laswa} alt="mail" quality={100} width={1000} height={1000} className="h-[200px] md:h-[400px] w-full object-fit object-cover mb-5" />
+              <Image src={Laswa} alt="mail" quality={100} width={1000} height={1000} className="h-[250px] md:h-[400px] w-full object-fit object-cover mb-5" />
               <div>
                 <h4 className="text-xl md:text-2xl mb-4 text-white">Laswa</h4>
                 <p className="text- leading-loose md:leading-loose text-[#B2B2B2] text-sm md:text-base font-camptonlight max-w-[620px]">
@@ -288,7 +288,7 @@ export default function Home() {
           </div>
           <div>
             <Link href="https://madamshikini.lagosstate.gov.ng/" target="_blank" rel="noreferrer">
-              <Image src={Shikini} alt="mail" quality={100} width={1000} height={1000} className="h-[200px] md:h-[400px] w-full object-fit object-cover mb-5" />
+              <Image src={Shikini} alt="mail" quality={100} width={1000} height={1000} className="h-[250px] md:h-[400px] w-full object-fit object-cover mb-5" />
               <div>
                 <h4 className="text-xl md:text-2xl mb-4 text-white">Madam Shikini</h4>
                 <p className="text- leading-loose md:leading-loose text-[#B2B2B2] text-sm md:text-base font-camptonlight max-w-[620px]">
@@ -299,7 +299,7 @@ export default function Home() {
           </div>
           <div>
             <Link href="https://madamshikini.lagosstate.gov.ng/" target="_blank" rel="noreferrer">
-              <Image src={LIRS} alt="mail" quality={100} width={1000} height={1000} className="h-[200px] md:h-[400px] w-full object-fit object-cover mb-6" />
+              <Image src={LIRS} alt="mail" quality={100} width={1000} height={1000} className="h-[250px] md:h-[400px] w-full object-fit object-cover mb-6" />
               <div>
                 <h4 className="text-xl md:text-2xl mb-4 text-white">LIRS</h4>
                 <p className="text- leading-loose md:leading-loose text-[#B2B2B2] text-sm md:text-base font-camptonlight max-w-[620px]">
