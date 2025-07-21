@@ -300,3 +300,23 @@ footer {
     background-position: center;
   }
 }
+
+.auto-slide-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.vertical-text.auto-slide-up {
+  transform: rotate(-90deg);
+}
+
+.auto-slide-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.vertical-text.auto-slide-up.visible {
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
+}

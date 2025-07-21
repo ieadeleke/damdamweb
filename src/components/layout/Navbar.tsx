@@ -8,12 +8,14 @@ import { CgMenuRight } from "react-icons/cg";
 import { Drawer } from "antd";
 import { useState } from "react";
 import { FaTimes } from "react-icons/fa";
+import { usePathname } from "next/navigation";
 
 interface NavInterface {
     blurry?: boolean
 }
 
 const Navbar = (props: NavInterface) => {
+    const pathname = usePathname();
     const [openMenu, setOpenMenu] = useState<boolean>(false);
     const toggleDrawer = () => {
         setOpenMenu(!openMenu);
@@ -26,13 +28,13 @@ const Navbar = (props: NavInterface) => {
             <div className="hidden md:block">
                 <ul className="flex gap-10 items-center">
                     <li>
-                        <Link href="/" className="text-sm text-white">Home</Link>
+                        <Link href="/" className={`${pathname === '/' ? 'text-blue' : 'text-white'} text-sm`}>Home</Link>
                     </li>
                     <li>
-                        <Link href="/about-us" className="text-sm text-white">About Us</Link>
+                        <Link href="/about-us" className={`${pathname === '/about-us' ? 'text-blue' : 'text-white'} text-sm`}>About Us</Link>
                     </li>
                     <li>
-                        <Link href="/career" className="text-sm text-white">Careers</Link>
+                        <Link href="/career" className={`${pathname === '/career' ? 'text-blue' : 'text-white'} text-sm`}>Careers</Link>
                     </li>
                 </ul>
             </div>

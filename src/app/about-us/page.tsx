@@ -230,7 +230,7 @@ const AboutUsPage = () => {
                         At DamDam Global, we provide practical, reliable, and tailored technology services that help businesses and government agencies grow, improve operations, and deliver better services to their users.
                     </p>
                 </div>
-                <div className="border-2 border-solid border-[#8B8B8B] max-w-[1420px] flex md:hidden flex-col justify-betwee mx-auto py-4 rounded-[20px] gap-0">
+                <div data-no-animate className="border-2 border-solid border-[#8B8B8B] max-w-[1420px] flex md:hidden flex-col justify-betwee mx-auto py-4 rounded-[20px] gap-0">
                     <div className={`flex h-full w-full relative cursor-pointer infra border-b-2 pt-0 pb-1 border-solid border-[#8B8B8B] px-2`} onClick={() => setCurrentInfrastructureView(0)}>
                         <div className={`flex flex-col gap-5 h-full w-full relative items-center`}>
                             <div className="flex w-full flex-co items-center relative justify-between h-full">

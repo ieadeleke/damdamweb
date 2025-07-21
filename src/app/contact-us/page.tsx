@@ -25,8 +25,8 @@ const ContactUsPage = () => {
                                             <Image src={Mail} alt="mail" quality={100} width={100} height={100} className="w-[24px] h-auto" />
                                         </div>
                                         <div>
-                                            <p className="text-graytext text-base mb-1">Quick Contact</p>
-                                            <h4 className="text-white">Email: <Link href="mailTo:info@damdamglobal.com" className="text-blue underline">
+                                            <p className="text-graytext text-base mb-1">Email Address</p>
+                                            <h4 className="text-white"><Link href="mailTo:info@damdamglobal.com" className="text-blue underline">
                                                 info@damdamglobal.com</Link></h4>
                                         </div>
                                     </div>

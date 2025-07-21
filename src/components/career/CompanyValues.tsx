@@ -28,7 +28,7 @@ const CompanyValues = () => {
                         <p className="text-sm md:text-base text-[#ABABAC] leading-loose md:leading-loose mb-8">
                             Every project is an opportunity to do work that matters.
                         </p>
-                        <button className="text-base font-bold text-[#31A5DE] flex justify-center items-center text-center w-max mx-auto  gap-3">About Us <FaArrowRight /></button>
+                        {/* <button className="text-base font-bold text-[#31A5DE] flex justify-center items-center text-center w-max mx-auto  gap-3">About Us <FaArrowRight /></button> */}
                     </div>
                     <div className="border border-solid border-[#FFFFFF38] bg-[#121212] py-8 px-6 rounded-[25px] text-center max-w-[380px]">
                         <Image src={InnovationImg} alt="mail" quality={100} width={1000} height={1000} className="h-[80px] mx-auto mb-4 w-auto object-center object-cover" />
@@ -37,7 +37,7 @@ const CompanyValues = () => {
                         <p className="text-sm md:text-base text-[#ABABAC] leading-loose md:leading-loose mb-8">
                             We think beyond the obvious and embrace new solutions.
                         </p>
-                        <button className="text-base font-bold text-[#31A5DE] flex justify-center items-center text-center w-max mx-auto  gap-3">About Us <FaArrowRight /></button>
+                        {/* <button className="text-base font-bold text-[#31A5DE] flex justify-center items-center text-center w-max mx-auto  gap-3">About Us <FaArrowRight /></button> */}
                     </div>
                     <div className="border border-solid border-[#FFFFFF38] bg-[#121212] py-8 px-6 rounded-[25px] text-center max-w-[380px]">
                         <Image src={IntegrityImg} alt="mail" quality={100} width={1000} height={1000} className="h-[80px] mx-auto mb-4 w-auto object-center object-cover" />
@@ -46,7 +46,7 @@ const CompanyValues = () => {
                         <p className="text-sm md:text-base text-[#ABABAC] leading-loose md:leading-loose mb-8">
                             We do the right thing, even when no one is watching.
                         </p>
-                        <button className="text-base font-bold text-[#31A5DE] flex justify-center items-center text-center w-max mx-auto  gap-3">About Us <FaArrowRight /></button>
+                        {/* <button className="text-base font-bold text-[#31A5DE] flex justify-center items-center text-center w-max mx-auto  gap-3">About Us <FaArrowRight /></button> */}
                     </div>
                 </div>
                 <div className="mt-5 w-max mx-auto flex flex-col md:grid grid-cols-2 gap-5">
@@ -57,7 +57,7 @@ const CompanyValues = () => {
                         <p className="text-sm md:text-base text-[#ABABAC] leading-loose md:leading-loose mb-8">
                             We listen, respect, and build better together.
                         </p>
-                        <button className="text-base font-bold text-[#31A5DE] flex justify-center items-center text-center w-max mx-auto  gap-3">About Us <FaArrowRight /></button>
+                        {/* <button className="text-base font-bold text-[#31A5DE] flex justify-center items-center text-center w-max mx-auto  gap-3">About Us <FaArrowRight /></button> */}
                     </div>
                     <div className="border border-solid border-[#FFFFFF38] bg-[#121212] py-8 px-6 rounded-[25px] text-center max-w-[380px]">
                         <Image src={ExcellenceImg} alt="mail" quality={100} width={1000} height={1000} className="h-[80px] mx-auto mb-4 w-auto object-center object-cover" />
@@ -66,7 +66,7 @@ const CompanyValues = () => {
                         <p className="text-sm md:text-base text-[#ABABAC] leading-loose md:leading-loose mb-8">
                             We hold ourselves to high standards and then raise them.
                         </p>
-                        <button className="text-base font-bold text-[#31A5DE] flex justify-center items-center text-center w-max mx-auto  gap-3">About Us <FaArrowRight /></button>
+                        {/* <button className="text-base font-bold text-[#31A5DE] flex justify-center items-center text-center w-max mx-auto  gap-3">About Us <FaArrowRight /></button> */}
                     </div>
                 </div>
             </div>
