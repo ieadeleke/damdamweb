@@ -23,7 +23,9 @@ const Navbar = (props: NavInterface) => {
     return (
         <nav className={`flex items-center justify-between px-3 md:px-20 py-4 z-50 w-full max-w-[1920px] mx-auto gap-20 fixed top-0 ${props.blurry ? 'blurred-bg' : 'bg-black'}`}>
             <div>
-                <Image src={LogoImg} alt="logo" quality={100} width={0} height={0} className="w-[135px] md:w-[148px] h-auto" />
+                <Link href="/">
+                    <Image src={LogoImg} alt="logo" quality={100} width={0} height={0} className="w-[135px] md:w-[148px] h-auto" />
+                </Link>
             </div>
             <div className="hidden md:block">
                 <ul className="flex gap-10 items-center">

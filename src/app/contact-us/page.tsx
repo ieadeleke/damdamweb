@@ -48,7 +48,7 @@ const ContactUsPage = () => {
                                         </div>
                                         <div>
                                             <p className="text-graytext text-base mb-1">Location</p>
-                                            <Link href="https://maps.app.goo.gl/GhhNmD7cPWYz6UQd9" target="_blank" className="text-white underline">C & I Leasing Dr, Lekki Phase I, Lekki 106104, Lagos</Link>
+                                            <Link href="https://maps.app.goo.gl/GhhNmD7cPWYz6UQd9" target="_blank" className="text-blue underline">C & I Leasing Dr, Lekki Phase I, Lekki 106104, Lagos</Link>
                                         </div>
                                     </div>
                                 </div>
