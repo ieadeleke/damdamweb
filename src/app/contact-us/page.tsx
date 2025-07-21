@@ -11,12 +11,12 @@ import AppLayout from "@/components/layout/Layout";
 const ContactUsPage = () => {
     return (
         <AppLayout hideMail={true}>
-            <div className="md:px-20 py-36">
+            <div className="md:px-20 pt-36 pb-16 md:pb-36">
                 <div className="px-5 md:px-0">
                     <h1 className="text-3xl md:text-5xl font-camptonbold text-white">Contact Us</h1>
                 </div>
                 <div className="mt-10">
-                    <div className="flex flex-col gap-20 md:gap-0 md:flex-row md:items-center">
+                    <div className="flex flex-col gap-10 md:gap-0 md:flex-row md:items-center">
                         <div className="md:w-[688px] px-5 md:px-0">
                             <div className="border-l-[5px] md:border-l-[9px] px-[16px] md:pl-[25px] py-10 md:py-16 border-solid border-blue">
                                 <div className="flex flex-col gap-12">
@@ -57,7 +57,7 @@ const ContactUsPage = () => {
                         <div className="flex-1">
                             <div className="contact-form relative md:w-[595px] px-5 md:px-0 py-10 md:py-12 mx-auto">
                                 {/* SVG borders on the outer container edges */}
-                                <div className="absolute inset-0 pointer-events-none">
+                                <div className="hidden md:block absolute inset-0 pointer-events-none">
                                     <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
                                         <path
                                             // d="M0,0 L20,0 M0,0 L0,20 M80,0 L100,0 L100,20 M0,80 L0,100 L20,100 M80,100 L100,100 L100,80"

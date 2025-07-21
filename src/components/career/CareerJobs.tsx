@@ -17,7 +17,7 @@ const AllJobs = () => {
     }
 
     return (
-        <div className="pb-28 pt-36 max-w-[1630px] mx-auto">
+        <div className="pb-20 md:pb-28 pt-36 max-w-[1630px] mx-auto">
             <div className="text-center">
                 <h4 className="text-3xl md:text-5xl font-camptonsemibold text-white mb-5">Featured Jobs</h4>
                 <p className="text-sm leading-loose text-white">

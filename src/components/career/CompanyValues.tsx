@@ -13,7 +13,7 @@ import Image from "next/image";
 const CompanyValues = () => {
     return (
         <div className="relative">
-            <div className="pb-28 max-w-[1150px] mx-auto">
+            <div className="px-5 md:px-0 pb-20 md:pb-28 max-w-[1150px] mx-auto">
                 <div className="text-center">
                     <h4 className="text-3xl md:text-6xl max-w-[500px] leading-tighter md:leading-tighter  mx-auto font-camptonsemibold text-white mb-5">Our Core Values in Action</h4>
                     <p className="text-sm leading-loose md:leading-loose text-white max-w-[700px] mx-auto">
@@ -21,7 +21,7 @@ const CompanyValues = () => {
                     </p>
                 </div>
                 <div className="mt-14 flex flex-col md:grid grid-cols-3 gap-5">
-                    <div className="border border-solid border-[#FFFFFF38] bg-[#121212] py-8 px-6 rounded-[25px] text-center max-w-[380px]">
+                    <div className="border border-solid border-[#FFFFFF38] bg-[#121212] py-8 px-6 rounded-[25px] text-center w-full md:max-w-[380px] mx-auto">
                         <Image src={ImpactImg} alt="mail" quality={100} width={1000} height={1000} className="h-[80px] mx-auto mb-4 w-auto object-center object-cover" />
 
                         <h4 className="mb-3 text-[#D5D5D5] font-camptonbold text-xl">Impact</h4>
@@ -30,7 +30,7 @@ const CompanyValues = () => {
                         </p>
                         {/* <button className="text-base font-bold text-[#31A5DE] flex justify-center items-center text-center w-max mx-auto  gap-3">About Us <FaArrowRight /></button> */}
                     </div>
-                    <div className="border border-solid border-[#FFFFFF38] bg-[#121212] py-8 px-6 rounded-[25px] text-center max-w-[380px]">
+                    <div className="border border-solid border-[#FFFFFF38] bg-[#121212] py-8 px-6 rounded-[25px] text-center w-full md:max-w-[380px] mx-auto">
                         <Image src={InnovationImg} alt="mail" quality={100} width={1000} height={1000} className="h-[80px] mx-auto mb-4 w-auto object-center object-cover" />
 
                         <h4 className="mb-3 text-[#D5D5D5] font-camptonbold text-xl">Innovation</h4>
@@ -39,7 +39,7 @@ const CompanyValues = () => {
                         </p>
                         {/* <button className="text-base font-bold text-[#31A5DE] flex justify-center items-center text-center w-max mx-auto  gap-3">About Us <FaArrowRight /></button> */}
                     </div>
-                    <div className="border border-solid border-[#FFFFFF38] bg-[#121212] py-8 px-6 rounded-[25px] text-center max-w-[380px]">
+                    <div className="border border-solid border-[#FFFFFF38] bg-[#121212] py-8 px-6 rounded-[25px] text-center w-full md:max-w-[380px] mx-auto">
                         <Image src={IntegrityImg} alt="mail" quality={100} width={1000} height={1000} className="h-[80px] mx-auto mb-4 w-auto object-center object-cover" />
 
                         <h4 className="mb-3 text-[#D5D5D5] font-camptonbold text-xl">Integrity</h4>
@@ -49,8 +49,8 @@ const CompanyValues = () => {
                         {/* <button className="text-base font-bold text-[#31A5DE] flex justify-center items-center text-center w-max mx-auto  gap-3">About Us <FaArrowRight /></button> */}
                     </div>
                 </div>
-                <div className="mt-5 w-max mx-auto flex flex-col md:grid grid-cols-2 gap-5">
-                    <div className="border border-solid border-[#FFFFFF38] bg-[#121212] py-8 px-6 rounded-[25px] text-center max-w-[380px]">
+                <div className="mt-5 md:w-max mx-auto flex flex-col md:grid grid-cols-2 gap-5">
+                    <div className="border border-solid border-[#FFFFFF38] bg-[#121212] py-8 px-6 rounded-[25px] text-center w-full md:max-w-[380px] mx-auto">
                         <Image src={CollaborationImg} alt="mail" quality={100} width={1000} height={1000} className="h-[80px] mx-auto mb-4 w-auto object-center object-cover" />
 
                         <h4 className="mb-3 text-[#D5D5D5] font-camptonbold text-xl">Collaboration</h4>
@@ -59,7 +59,7 @@ const CompanyValues = () => {
                         </p>
                         {/* <button className="text-base font-bold text-[#31A5DE] flex justify-center items-center text-center w-max mx-auto  gap-3">About Us <FaArrowRight /></button> */}
                     </div>
-                    <div className="border border-solid border-[#FFFFFF38] bg-[#121212] py-8 px-6 rounded-[25px] text-center max-w-[380px]">
+                    <div className="border border-solid border-[#FFFFFF38] bg-[#121212] py-8 px-6 rounded-[25px] text-center w-full md:max-w-[380px] mx-auto">
                         <Image src={ExcellenceImg} alt="mail" quality={100} width={1000} height={1000} className="h-[80px] mx-auto mb-4 w-auto object-center object-cover" />
 
                         <h4 className="mb-3 text-[#D5D5D5] font-camptonbold text-xl">Excellence</h4>
@@ -70,7 +70,7 @@ const CompanyValues = () => {
                     </div>
                 </div>
             </div>
-            <div className="absolute top-0 right-0">
+            <div className="absolute hidden md:block top-0 right-0">
                 <Image src={RingImg} alt="rings" quality={100} width={1000} height={1000} className="min-h-[1500px] mx-auto mb-4 w-auto object-center object-cover" />
             </div>
         </div>

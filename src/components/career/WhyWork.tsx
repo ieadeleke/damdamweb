@@ -11,10 +11,10 @@ import Image from "next/image";
 
 const WhyWorkWithUs = () => {
     return (
-        <div className="frame max-w-[1550px] mb-28 bg-[#1E1E1E] rounded-[24px] py-14 pr-20 mx-auto grid grid-cols-2">
+        <div className="frame max-w-[1550px] mb-20 md:mb-28 bg-[#1E1E1E] rounded-[24px] py-10 md:py-14 px-5 md:px-0 md:pr-20 mx-auto md:grid grid-cols-2">
             <div></div>
             <div>
-                <h4 className="text-[#ACACAC] text-3xl mb-4">
+                <h4 className="text-[#ACACAC] text-2xl md:text-3xl mb-4">
                     Why Work With Us
                 </h4>
                 <p className="text-sm leading-loose text-[#AAAAAA]">

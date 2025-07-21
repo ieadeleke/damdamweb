@@ -58,19 +58,19 @@ const Navbar = (props: NavInterface) => {
                     </div>
                     <ul className="flex items-center justify-center flex-col h-[65vh] text-center gap-7">
                         <li className="pb-4 text-black">
-                            <Link href="/" className="text-3xl text-[#B2B2B2] font-medium p-4">
+                            <Link href="/" className={`${pathname === '/' ? 'text-blue' : 'text-[#B2B2B2]'} text-3xl font-medium p-4`}>
                                 Home</Link>
                         </li>
                         <li className="pb-4 text-black">
-                            <Link href="/about-us" className="text-3xl text-[#B2B2B2] font-medium p-4">
+                            <Link href="/about-us" className={`${pathname === '/about-us' ? 'text-blue' : 'text-[#B2B2B2]'} text-3xl font-medium p-4`}>
                                 About Us</Link>
                         </li>
                         <li className="pb-4 text-black">
-                            <Link href="/career" className="text-3xl text-[#B2B2B2] font-medium p-4">
+                            <Link href="/career" className={`${pathname === '/career' ? 'text-blue' : 'text-[#B2B2B2]'} text-3xl font-medium p-4`}>
                                 Careers</Link>
                         </li>
                         <li className="pb-4 text-black">
-                            <Link href="/contact-us" className="text-3xl text-[#B2B2B2] font-medium p-4">
+                            <Link href="/contact-us" className={`${pathname === '/contact-us' ? 'text-blue' : 'text-[#B2B2B2]'} text-3xl font-medium p-4`}>
                                 Contact Us</Link>
                         </li>
                     </ul>
